@@ -1,0 +1,62 @@
+/* Universal */
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+section, footer {
+    padding: 1em;
+}
+
+/* Typography */
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 600;
+    align-self: center;
+    font-size: 3rem;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+/* Hero */
+
+/* Projects */
+
+/* Footer */
+footer {
+    background-color: #3f8eb0ee;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+footer div p {
+    margin: .5em 0;
+}
+
+footer div img {
+    width: 4em;
+    height: 3em;
+}
