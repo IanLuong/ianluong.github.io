@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    mode: 'jit',
+    content: [
+        "./src/**/*.{js,jsx,ts,tsx}",
+    ],
     theme: {
         fontFamily: {
             'inter': ["'Inter'", 'sans-serif'],
@@ -8,6 +11,6 @@ module.exports = {
             'ibarra': ["'Ibarra Real Nova'", 'serif'],
         },
         extend: {},
-        plugins: [],
-    }
+    },
+    plugins: [],
 }
