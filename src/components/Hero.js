@@ -14,7 +14,7 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-col p-6 gap-4">
-        <h1 className="font-ibarra font-semibold self-center text-6xl mb-">
+        <h1 className="font-ibarra font-semibold self-center text-6xl">
           About me
         </h1>
 
