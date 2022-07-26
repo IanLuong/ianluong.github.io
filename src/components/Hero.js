@@ -1,16 +1,20 @@
 import portrait from "../img/pexels-kassandre-pedro-12798416.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Hero() {
   return (
     <section>
-      <div className="relative flex flex-col bg-red-400">
-        <img className="w-1/2 self-center m-12" src={portrait} alt="" />
-        <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white right-4 top-4 text-right">
-          Frontend Developer
+      <div className="relative flex flex-col bg-red-400 min-h-screen justify-center items-center">
+        <img className="w-11/12" src={portrait} alt="" />
+        <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white right-8 top-32 text-right">
+          Frontend <br /> Developer
         </h1>
-        <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white left-4 bottom-4">
-          Ian Luong
+        <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white left-8 bottom-32">
+          Ian <br /> Luong
         </h1>
+        <FontAwesomeIcon className="animate-bounce text-white drop-shadow-md absolute bottom-4" icon={faArrowCircleDown} size="3x"/>
       </div>
 
       <div className="flex flex-col p-6 gap-4 font-inter">
