@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Project(props) {
     const {title, desc, imgPath, repoPath, sourcePath} = props 
     return (
-        <div className="w-full shadow-xl">
+        <div className="w-full max-w-lg shadow-xl justify-self-center">
             {imgPath ? <img className="w-full h-48" src={imgPath} alt=""/> : <div className="w-full h-48 bg-red-700"></div>}
             
-            <div className="px-4 pt-2 pb-8">
+            <div className="px-4 pt-2 pb-16">
                 <div className="flex items-center">
                     <h2 className="font-ibarra text-lg mr-auto">{title}</h2>
                     <div className="flex gap-4">
