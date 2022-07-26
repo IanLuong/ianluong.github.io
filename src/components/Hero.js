@@ -13,7 +13,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="flex flex-col p-6 gap-4">
+      <div className="flex flex-col p-6 gap-4 font-inter">
         <h1 className="font-ibarra font-semibold self-center text-6xl">
           About me
         </h1>

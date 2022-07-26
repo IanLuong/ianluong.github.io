@@ -7,7 +7,6 @@ module.exports = {
     theme: {
         fontFamily: {
             'inter': ["'Inter'", 'sans-serif'],
-            'roboto': ["'Roboto'", 'sans-serif'],
             'ibarra': ["'Ibarra Real Nova'", 'serif'],
         },
         extend: {},
