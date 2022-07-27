@@ -1,10 +1,13 @@
 import portrait from "../img/pexels-kassandre-pedro-12798416.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 
 export default function Hero() {
-  return (
+  const scrollRef = useRef()
+  
+    return (
     <section>
       <div className="bg-red-400">
         <div className="relative flex flex-col md:flex-row bg-red-400 min-h-screen justify-center items-center md:m-auto md:w-2/3">
@@ -16,14 +19,16 @@ export default function Hero() {
             Ian <br /> Luong
           </h1>
           <FontAwesomeIcon
-            className="animate-bounce text-white drop-shadow-md absolute bottom-4"
+            className="animate-bounce text-white hover:text-black cursor-pointer drop-shadow-md absolute bottom-4"
             icon={faArrowCircleDown}
             size="3x"
+            onClick={() => scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+        }
           />
         </div>
       </div>
 
-      <div className="md:m-auto md:w-2/3">
+      <div className="md:m-auto md:w-2/3" ref={scrollRef}>
         <div className="flex flex-col p-6 gap-4 font-inter">
           <h1 className="font-ibarra font-semibold self-center text-6xl">
             About me
