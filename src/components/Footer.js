@@ -9,8 +9,8 @@ import footerPortrait from "../img/pexels-enes-bayraktar-11306305.jpg"
 
 export default function Footer() {
   return (
-    <footer className="md:flex md:justify-around bg-blue-400">
-      <div className="md:flex md:w-2/3">
+    <footer className="md:flex md:justify-center bg-blue-400">
+      <div className="md:flex md:w-2/3 justify-center">
         <div class="font-inter flex flex-col p-6 gap-4 md:justify-center">
           <h1 class="font-ibarra text-white font-semibold self-center text-6xl md:self-start">
             Contact me
