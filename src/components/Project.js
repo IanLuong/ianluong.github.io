@@ -18,18 +18,18 @@ export default function Project(props) {
             <h2 className="font-ibarra text-xl mr-auto">{title}</h2>
             <div className="flex gap-4">
               {repoPath && (
-                <a href={repoPath}>
-                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                <a href={repoPath} className="hover:opacity-30 transition-opacity ease-in delay-75">
+                  <FontAwesomeIcon icon={faGithub} size="xl" />
                 </a>
               )}
               {sourcePath && (
-                <a href={sourcePath}>
-                  <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" />
+                <a href={sourcePath} className="hover:opacity-30 transition-opacity ease-in delay-75">
+                  <FontAwesomeIcon icon={faUpRightFromSquare} size="xl" />
                 </a>
               )}
             </div>
           </div>
-          <p className="font-inter">{desc}</p>
+          <p className="font-inter italic">{desc}</p>
         </div>
       </div>
     );

@@ -9,7 +9,17 @@ module.exports = {
             'inter': ["'Inter'", 'sans-serif'],
             'ibarra': ["'Ibarra Real Nova'", 'serif'],
         },
-        extend: {},
+        extend: {
+            animation: {
+                fade: 'fade 2s ease-in-out',
+            },
+            keyframes: {
+                fade: {
+                    '0%' : { opacity: 0 },
+                    '100%': { opacity: 1 }
+                },
+            }
+        },
     },
     plugins: [],
 }

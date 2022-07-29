@@ -12,10 +12,10 @@ export default function Hero() {
         <div className="bg-red-400 lg:m-auto lg:max-w-screen-lg">
           <div className="relative flex flex-col md:flex-row bg-red-400 min-h-screen justify-center items-center md:m-auto md:w-2/3">
             <img className="w-3/4 md:w-11/12" src={portrait} alt="" />
-            <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white right-8 top-32 text-right">
+            <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white right-8 top-32 text-right animate-fade delay-2000">
               Frontend <br /> Developer
             </h1>
-            <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white left-8 bottom-32">
+            <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white left-8 bottom-32 animate-fade">
               Ian <br /> Luong
             </h1>
             <FontAwesomeIcon

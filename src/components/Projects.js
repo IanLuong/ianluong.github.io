@@ -13,14 +13,19 @@ return (
         <Project
           title="Spoofy Records"
           desc="Record store website produced to replicate an online shopping experience."
+          repoPath="https://github.com/IanLuong/shopping-cart"
+          sourcePath="http://ianluong.github.io/shopping-cart"
         />
         <Project
           title="Anime Quiz"
           desc="Mini quiz app made to entertain a growing, local anime community."
+          repoPath="https://github.com/IanLuong/anime-quiz"
+          sourcePath="http://ianluong.github.io/anime-quiz"
         />
         <Project
           title="Kamatimer"
           desc="Pomodoro Timer Chrome Extension created to keep focused. "
+          
         />
       </div>
     </div>
