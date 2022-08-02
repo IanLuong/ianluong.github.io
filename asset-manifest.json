@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.189dcb61.css",
+    "main.js": "/portfolio-site/static/js/main.0b9dde0c.js",
+    "static/media/pexels-enes-bayraktar-11306305.jpg": "/portfolio-site/static/media/pexels-enes-bayraktar-11306305.313d5161119b8cb7afe9.jpg",
+    "static/media/pexels-kassandre-pedro-12798416.jpg": "/portfolio-site/static/media/pexels-kassandre-pedro-12798416.3ea19e7067f0a6d14316.jpg",
+    "index.html": "/portfolio-site/index.html",
+    "main.189dcb61.css.map": "/portfolio-site/static/css/main.189dcb61.css.map",
+    "main.0b9dde0c.js.map": "/portfolio-site/static/js/main.0b9dde0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.189dcb61.css",
+    "static/js/main.0b9dde0c.js"
+  ]
+}
