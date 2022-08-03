@@ -6,9 +6,12 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 import footerPortrait from "../img/pexels-enes-bayraktar-11306305.jpg"
-import { useState } from "react"
+import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 
 export default function Footer() {
+  const form = useRef()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,8 +26,22 @@ export default function Footer() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    setSubmitted(true)
-    //doStuff()
+    emailjs
+      .sendForm(
+        "service_x12dbaa",
+        "contact_form",
+        form.current,
+        "tKd3aCBCFcnLeJTnn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          setSubmitted(true)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
   }
 
   return (
@@ -78,50 +95,54 @@ export default function Footer() {
             </a>
           </div>
           <form
+            ref={form}
             className="w-full text-white font-bold flex flex-col gap-4"
             onSubmit={handleSubmit}
           >
-            <div>
-              <label htmlFor="name">
-                Name <span className="text-red-500">*</span>
-              </label>
-              <input
-                className="w-full text-black font-normal px-1"
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email">
-                Email Address
-                <span className="text-red-500">*</span>
-              </label>
-              <input
-                className="w-full text-black font-normal px-1"
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="name">
-                Message <span className="text-red-500">*</span>
-              </label>
-              <textarea
-                className="w-full text-black font-normal px-1"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <button className="border-4">Submit</button>
-            {submitted && (
+            {!submitted ? (
+              <>
+                <div>
+                  <label htmlFor="name">
+                    Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    className="w-full text-black font-normal px-1"
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email">
+                    Email Address
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    className="w-full text-black font-normal px-1"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="name">
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    className="w-full text-black font-normal px-1"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <button className="border-4">Submit</button>
+              </>
+            ) : (
               <p className="text-green-900">Thanks for the message!</p>
             )}
           </form>
