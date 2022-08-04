@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.057e39d3.css",
-    "main.js": "/portfolio-site/static/js/main.a3047d9f.js",
-    "static/media/pexels-enes-bayraktar-11306305.jpg": "/portfolio-site/static/media/pexels-enes-bayraktar-11306305.313d5161119b8cb7afe9.jpg",
-    "static/media/pexels-kassandre-pedro-12798416.jpg": "/portfolio-site/static/media/pexels-kassandre-pedro-12798416.3ea19e7067f0a6d14316.jpg",
-    "index.html": "/portfolio-site/index.html",
-    "main.057e39d3.css.map": "/portfolio-site/static/css/main.057e39d3.css.map",
-    "main.a3047d9f.js.map": "/portfolio-site/static/js/main.a3047d9f.js.map"
+    "main.css": "/static/css/main.057e39d3.css",
+    "main.js": "/static/js/main.43558295.js",
+    "static/media/pexels-enes-bayraktar-11306305.jpg": "/static/media/pexels-enes-bayraktar-11306305.313d5161119b8cb7afe9.jpg",
+    "static/media/pexels-kassandre-pedro-12798416.jpg": "/static/media/pexels-kassandre-pedro-12798416.3ea19e7067f0a6d14316.jpg",
+    "index.html": "/index.html",
+    "main.057e39d3.css.map": "/static/css/main.057e39d3.css.map",
+    "main.43558295.js.map": "/static/js/main.43558295.js.map"
   },
   "entrypoints": [
     "static/css/main.057e39d3.css",
-    "static/js/main.a3047d9f.js"
+    "static/js/main.43558295.js"
   ]
 }
