@@ -3,7 +3,7 @@
 My portfolio site built using TailwindCSS and React.\
 Created as part of [The Odin Project's Personal Portfolio Project](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio).
 
-Webpage can be found at https://ianluong.github.io/portfolio-site.
+Webpage can be found at https://ianluong.github.io/.
 
 ## Acknowledgements
 
