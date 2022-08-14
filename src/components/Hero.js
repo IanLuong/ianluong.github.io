@@ -1,6 +1,6 @@
 import portrait from "../img/pexels-kassandre-pedro-12798416.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { useRef } from "react"
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="bg-red-400 lg:m-auto lg:max-w-screen-lg">
         <div className="relative flex flex-col md:flex-row bg-red-400 min-h-screen justify-center items-center md:m-auto md:w-2/3">
           <img
-            className="w-3/4 md:w-11/12 animate-fade2s"
+            className="w-3/4 md:w-11/12 h-[98vh] animate-fade2s max-h-screen object-cover"
             src={portrait}
             alt=""
           />
@@ -22,8 +22,8 @@ export default function Hero() {
             Ian <br /> Luong
           </h1>
           <FontAwesomeIcon
-            className="animate-bounce text-white hover:text-black cursor-pointer drop-shadow-md absolute bottom-4"
-            icon={faArrowCircleDown}
+            className="text-white hover:text-black cursor-pointer drop-shadow-md absolute bottom-4"
+            icon={faChevronDown}
             size="3x"
             onClick={() =>
               scrollRef.current.scrollIntoView({ behavior: "smooth" })
@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
       <div className="bg-white">
-        <div className="md:m-auto md:w-2/3 lg:w-1/2" ref={scrollRef}>
+        <div className="md:m-auto md:w-2/3 lg:w-1/2 lg:max-w-screen-lg" ref={scrollRef}>
           <div className="flex flex-col p-6 gap-4 font-inter">
             <h1 className="font-ibarra font-semibold self-center text-6xl">
               About me
