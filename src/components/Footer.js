@@ -1,13 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import {
-  faLinkedin,
-  faInstagram,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
 import footerPortrait from "../img/pexels-enes-bayraktar-11306305.jpg"
 import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
+import ContactBar from "./ContactBar"
 
 export default function Footer() {
   const form = useRef()
@@ -60,39 +54,8 @@ export default function Footer() {
             ASAP!
           </p>
           <p className="text-white">Email me at ianluongcodes@gmail.com</p>
-          <div className="flex gap-4 items-center self-center md:self-start">
-            <a
-              href="https://www.linkedin.com/in/ianluong/"
-              target="_blank"
-              className="hover:text-white focus:text-white hover:animate-pulse"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="3x" />
-            </a>
-            <a
-              href="https://www.instagram.com/ian__luong/"
-              target="_blank"
-              className="hover:text-white focus:text-white hover:animate-pulse"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="3x" />
-            </a>
-            <a
-              href="https://github.com/IanLuong"
-              target="_blank"
-              className="hover:text-white focus:text-white hover:animate-pulse"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} size="3x" />
-            </a>
-            <a
-              href="mailto:ianluongcodes@gmail.com"
-              target="_blank"
-              className="hover:text-white focus:text-white hover:animate-pulse"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faEnvelope} size="3x" />
-            </a>
+          <div className="md:self-start">
+            <ContactBar color="black"/>
           </div>
           <form
             ref={form}

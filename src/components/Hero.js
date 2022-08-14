@@ -1,6 +1,7 @@
 import portrait from "../img/pexels-kassandre-pedro-12798416.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+import ContactBar from "./ContactBar"
 import { useRef } from "react"
 
 export default function Hero() {
@@ -8,32 +9,34 @@ export default function Hero() {
 
   return (
     <section className="bg-red-400">
-      <div className="bg-red-400 lg:m-auto lg:max-w-screen-lg">
-        <div className="relative flex flex-col md:flex-row bg-red-400 min-h-screen justify-center items-center md:m-auto md:w-2/3">
-          <img
-            className="w-3/4 md:w-11/12 h-[98vh] animate-fade2s max-h-screen object-cover"
-            src={portrait}
-            alt=""
-          />
-          <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white right-8 top-32 text-right animate-fade4s delay-2000">
-            Frontend <br /> Developer
+      <div className="lg:m-auto lg:max-w-screen-lg">
+        <div className="flex flex-col gap-4 bg-red-400 min-h-screen justify-center items-center text-white text-center">
+          <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade6s">
+            <span className="font-inter text-xl">hi I'm </span>Ian Luong.
           </h1>
-          <h1 className="font-ibarra drop-shadow-md absolute text-6xl text-white left-8 bottom-32 animate-fade6s">
-            Ian <br /> Luong
+          <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade4s">
+            <span className="font-inter text-xl">I'm a </span> Frontend Developer.
           </h1>
-          <FontAwesomeIcon
-            className="text-white hover:text-black cursor-pointer drop-shadow-md absolute bottom-4"
-            icon={faChevronDown}
-            size="3x"
-            onClick={() =>
-              scrollRef.current.scrollIntoView({ behavior: "smooth" })
-            }
-          />
+          <ContactBar/>
+          <div className="font-inter absolute bottom-4">
+            <h3 className="text-lg">Get to know me</h3>
+            <FontAwesomeIcon
+              className="hover:text-white cursor-pointer drop-shadow-md"
+              icon={faChevronDown}
+              size="3x"
+              onClick={() =>
+                scrollRef.current.scrollIntoView({ behavior: "smooth" })
+              }
+            />
+          </div>
         </div>
       </div>
 
       <div className="bg-white">
-        <div className="md:m-auto md:w-2/3 lg:w-1/2 lg:max-w-screen-lg" ref={scrollRef}>
+        <div
+          className="md:m-auto md:w-2/3 lg:w-1/2 lg:max-w-screen-lg"
+          ref={scrollRef}
+        >
           <div className="flex flex-col p-6 gap-4 font-inter">
             <h1 className="font-ibarra font-semibold self-center text-6xl">
               About me

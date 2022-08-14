@@ -8,6 +8,9 @@ module.exports = {
       ibarra: ["'Ibarra Real Nova'", "serif"],
     },
     extend: {
+      colors: {
+        'pink': '#FA9999'
+      },
       animation: {
         fade2s: "fade 2s ease-in-out",
         fade4s: "fade 4s ease-in-out",
