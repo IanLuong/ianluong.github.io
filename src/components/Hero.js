@@ -11,17 +11,19 @@ export default function Hero() {
     <section className="bg-red-400">
       <div className="lg:m-auto lg:max-w-screen-lg">
         <div className="flex flex-col gap-4 bg-red-400 min-h-screen justify-center items-center text-white text-center">
-          <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade6s">
+          <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade2s">
             <span className="font-inter text-xl">hi I'm </span>Ian Luong.
           </h1>
           <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade4s">
-            <span className="font-inter text-xl">I'm a </span> Frontend Developer.
+            <span className="font-inter text-xl">i'm a </span> Frontend Developer.
           </h1>
-          <ContactBar/>
-          <div className="font-inter absolute bottom-4">
-            <h3 className="text-lg">Get to know me</h3>
+          <div className="animate-fade6s">
+            <ContactBar/>
+          </div>
+          <div className="font-inter absolute bottom-4 animate-fade6s">
+            <h3 className="text-xl">Get to know me!</h3>
             <FontAwesomeIcon
-              className="hover:text-white cursor-pointer drop-shadow-md"
+              className="hover:text-white cursor-pointer drop-shadow-md animate-bounce"
               icon={faChevronDown}
               size="3x"
               onClick={() =>

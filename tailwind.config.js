@@ -3,6 +3,9 @@ module.exports = {
   mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    backgroundImage: {
+      'bay-photo': "url('img/bay_photo.jpg')",
+    },
     fontFamily: {
       inter: ["'Inter'", "sans-serif"],
       ibarra: ["'Ibarra Real Nova'", "serif"],
@@ -14,7 +17,7 @@ module.exports = {
       animation: {
         fade2s: "fade 2s ease-in-out",
         fade4s: "fade 4s ease-in-out",
-        fade6s: "fade 4s ease-in-out",
+        fade6s: "fade 6s ease-in-out",
       },
       keyframes: {
         fade: {
