@@ -8,11 +8,11 @@ export default function Hero() {
   const scrollRef = useRef()
 
   return (
-    <section className="bg-red-400">
+    <section className="bg-dark-blue">
       <div className="lg:m-auto lg:max-w-screen-lg">
-        <div className="flex flex-col gap-4 bg-red-400 min-h-screen justify-center items-center text-white text-center">
+        <div className="flex flex-col gap-4 min-h-screen justify-center items-center text-white text-center">
           <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade2s">
-            <span className="font-inter text-xl">hi I'm </span>Ian Luong.
+            <span className="font-inter text-xl">hi i'm </span>Ian Luong.
           </h1>
           <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade4s">
             <span className="font-inter text-xl">i'm a </span> Frontend Developer.
@@ -36,7 +36,7 @@ export default function Hero() {
 
       <div className="bg-white">
         <div
-          className="md:m-auto md:w-2/3 lg:w-1/2 lg:max-w-screen-lg"
+          className="md:m-auto lg:max-w-screen-lg"
           ref={scrollRef}
         >
           <div className="flex flex-col p-6 gap-4 font-inter">

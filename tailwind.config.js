@@ -12,7 +12,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'pink': '#FA9999'
+        'pink': '#FA9999',
+        'dark-blue': '#002742',
+        'light-blue': '#B8E1FF'
       },
       animation: {
         fade2s: "fade 2s ease-in-out",

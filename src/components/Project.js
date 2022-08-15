@@ -3,73 +3,56 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { createElement } from "react"
 
-export default function Project({ title, desc, imgPath, builtWith, repoPath, sourcePath, position}) {
-  // return (
-  //   <div className="w-full max-w-sm max-h-64 shadow-xl justify-self-center">
-  //     {imgPath ? (
-  //       <img className="w-full h-32" src={imgPath} alt="" />
-  //     ) : (
-  //       <div className="w-full h-32 bg-red-700"></div>
-  //     )} 
-
-  //     <div className="px-4 pt-2 p-16">
-  //       <div className=" flex items-center">
-  //         <h2 className="font-ibarra text-xl mr-auto">{title}</h2>
-  //         <div className="flex gap-4">
-  //           {repoPath && (
-  //             <a
-  //               href={repoPath}
-  //               className="hover:opacity-30 transition-opacity ease-in delay-75"
-  //             >
-  //               <FontAwesomeIcon icon={faGithub} size="xl" />
-  //             </a>
-  //           )}
-  //           {sourcePath && (
-  //             <a
-  //               href={sourcePath}
-  //               className="hover:opacity-30 transition-opacity ease-in delay-75"
-  //             >
-  //               <FontAwesomeIcon icon={faUpRightFromSquare} size="xl" />
-  //             </a>
-  //           )}
-  //         </div>
-  //       </div>
-  //       <p className="font-inter italic">{desc}</p>
-  //     </div>
-  //   </div>
-  // )
-
+export default function Project({
+  title,
+  desc,
+  imgPath,
+  builtWith,
+  repoPath,
+  sourcePath,
+  isLeft,
+}) {
   return (
-    <div className="flex flex-col border-black border-2 rounded-md">
+    <div className="flex flex-col lg:flex-row justify-between gap-4">
       {imgPath ? (
-        <img className="w-full h-32 object-contain" src={imgPath} alt="" />
+        <img
+          className={`w-full lg:w-1/2 border-4 ${
+            isLeft ? "lg:order-first" : "lg:order-last"
+          }`}
+          src={imgPath}
+          alt=""
+        />
       ) : (
-        <div className="w-full h-64 bg-red-700"></div>
-      )}
-      <div className="m-2">
-        <div className="flex justify-between pb-2">
-          <h1 className="font-ibarra font-bold text-xl">{title}</h1>
-          <div className="flex gap-4 justify-center">
-            {repoPath && (
-              <a
-                href={repoPath}
-                className="hover:opacity-30 transition-opacity ease-in delay-75"
-              >
-                <FontAwesomeIcon icon={faGithub} size="xl" />
-              </a>
-            )}
-            {sourcePath && (
-              <a
-                href={sourcePath}
-                className="hover:opacity-30 transition-opacity ease-in delay-75"
-              >
-                <FontAwesomeIcon icon={faUpRightFromSquare} size="xl" />
-              </a>
-            )}
-          </div>
+        <div className="w-full max-w-screen-sm h-48 bg-red-700 flex items-center justify-center">
+          Project Image
         </div>
-        <p className="font-inter italic mb-2 border-b-2 whitespace-pre-line">{desc}</p>
-        <p className="font-ibarra">{builtWith}</p>
+      )}
+      <div className="mb-2">
+        <div className="justify-between pb-2">
+          <h1 className="font-inter font-bold text-2xl">{title}</h1>
+          <p className="font-inter text-lg">
+            <span className="font-bold">Built with:</span> {builtWith}
+          </p>
+        </div>
+        <p className="font-inter mb-4 whitespace-pre-line">{desc}</p>
+        <div className="flex gap-4 justify-left">
+          {repoPath && (
+            <a href={repoPath}>
+              <div className="project-button">
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+                Repo
+              </div>
+            </a>
+          )}
+          {sourcePath && (
+            <a href={sourcePath}>
+              <div className="project-button">
+                <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" />
+                Demo
+              </div>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   )
