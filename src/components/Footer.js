@@ -40,7 +40,7 @@ export default function Footer() {
 
   return (
     <footer className="md:flex md:justify-center bg-blue-400 lg:h-screen">
-      <div className="md:flex md:w-2/3 justify-center">
+      <div className="flex flex-col md:flex-row md:w-2/3 justify-center items-center md:items-stretch">
         <div className="font-inter flex flex-col p-6 gap-4 md:justify-center max-w-xl">
           <h1 className="font-ibarra text-white font-semibold self-center text-6xl md:self-start">
             Contact me

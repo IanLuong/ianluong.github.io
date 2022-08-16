@@ -30,11 +30,11 @@ export default function Project({
       <div className="mb-2">
         <div className="justify-between pb-2">
           <h1 className="font-inter font-bold text-2xl">{title}</h1>
-          <p className="font-inter text-lg">
+          <p className="font-inter text-xl">
             <span className="font-bold">Built with:</span> {builtWith}
           </p>
         </div>
-        <p className="font-inter mb-4 whitespace-pre-line">{desc}</p>
+        <p className="font-inter mb-4 whitespace-pre-line text-lg">{desc}</p>
         <div className="flex gap-4 justify-left">
           {repoPath && (
             <a href={repoPath}>
