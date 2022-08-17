@@ -1,4 +1,3 @@
-import portrait from "../img/pexels-kassandre-pedro-12798416.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import ContactBar from "./ContactBar"

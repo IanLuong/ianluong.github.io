@@ -2,6 +2,7 @@ import Project from "./Project"
 import kamatimer from "../img/kamatimer.png"
 import quiz from "../img/quiz.png"
 import spoofy from "../img/spoofy.png"
+import portfolio from "../img/portfolio.png"
 
 export default function Projects() {
   return (
@@ -39,6 +40,18 @@ export default function Projects() {
             isLeft={false}
           />
           <Project
+            title="My Portfolio"
+            desc={[
+              "My portfolio showing off my work and some of my interests. Oh hey wait a second, you already knew that because you're here right now. ",
+              "\n\n",
+              "Huh, I guess you can click the link if you want. I'm pretty sure I know where it'll take you though.",
+            ]}
+            imgPath={portfolio}
+            builtWith="React, Tailwind CSS and most importantly... love :)"
+            sourcePath="http://ianluong.github.io/"
+            isLeft={true}
+          />
+          <Project
             title="Kamatimer"
             desc={[
               "A Pomodoro Timer Web App created for friends and family to keep focused. The use-sound hook makes use of bell and tick sounds to announce breaks, ensuring you pace your learning and ace your goals!",
@@ -49,7 +62,7 @@ export default function Projects() {
             builtWith="React, The 'use-sound' Hook, TypeScript and Tailwind CSS"
             repoPath="https://github.com/IanLuong/kamatimer"
             sourcePath="http://ianluong.github.io/kamatimer"
-            isLeft={true}
+            isLeft={false}
           />
         </div>
       </div>

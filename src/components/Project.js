@@ -16,7 +16,7 @@ export default function Project({
     <div className="flex flex-col lg:flex-row justify-between gap-4">
       {imgPath ? (
         <img
-          className={`w-full lg:w-1/2 border-4 ${
+          className={`w-full lg:w-1/2 border-4 object-cover ${
             isLeft ? "lg:order-first" : "lg:order-last"
           }`}
           src={imgPath}
