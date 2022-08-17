@@ -10,3 +10,4 @@ Webpage can be found at https://ianluong.github.io/.
  - Favicon generated with [favicon.io](https://favicon.io/)
  - Icons provided by [FontAwesome](https://fontawesome.com/)
  - Images provided by [Pexels](https://www.pexels.com/)
+   - Cat Photo by Enes Bayraktar: https://www.pexels.com/photo/cat-sleeping-on-tree-stump-near-water-11306305/
