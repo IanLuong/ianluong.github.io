@@ -17,9 +17,9 @@ module.exports = {
         'light-blue': '#B8E1FF'
       },
       animation: {
-        fade2s: "fade ease-in 2s",
-        fade4s: "fade ease-in 4s",
-        fade8s: "fade ease-in 8s",
+        fade1s: "fade ease-in 1s",
+        fade3s: "fade ease-in 3s",
+        fade6s: "fade ease-in 6s",
       },
       keyframes: {
         fade: {
