@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.514180f5.css",
-    "main.js": "/static/js/main.58c0f6d5.js",
+    "main.css": "/static/css/main.084504d4.css",
+    "main.js": "/static/js/main.27245c15.js",
     "static/media/spoofy.png": "/static/media/spoofy.05bf94a2eee020304864.png",
     "static/media/pexels-enes-bayraktar-11306305.jpg": "/static/media/pexels-enes-bayraktar-11306305.313d5161119b8cb7afe9.jpg",
     "static/media/quiz.png": "/static/media/quiz.736a8c70e525050ef121.png",
     "static/media/kamatimer.png": "/static/media/kamatimer.84fe16feb29dc609d460.png",
     "static/media/portfolio.png": "/static/media/portfolio.931c0e210d1309bd00d3.png",
     "index.html": "/index.html",
-    "main.514180f5.css.map": "/static/css/main.514180f5.css.map",
-    "main.58c0f6d5.js.map": "/static/js/main.58c0f6d5.js.map"
+    "main.084504d4.css.map": "/static/css/main.084504d4.css.map",
+    "main.27245c15.js.map": "/static/js/main.27245c15.js.map"
   },
   "entrypoints": [
-    "static/css/main.514180f5.css",
-    "static/js/main.58c0f6d5.js"
+    "static/css/main.084504d4.css",
+    "static/js/main.27245c15.js"
   ]
 }
