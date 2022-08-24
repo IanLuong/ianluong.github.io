@@ -52,11 +52,11 @@ export default function Projects() {
             isLeft={true}
           />
           <Project
-            title="Kamatimer"
+            title="KamaTimer"
             desc={[
-              "A Pomodoro Timer Web App created for friends and family to keep focused. The use-sound hook makes use of bell and tick sounds to announce breaks, ensuring you pace your learning and ace your goals!",
+              "A Pomodoro Timer Web App created for friends and family to keep focused, featuring customizable focus/break timing and a dark mode. The use-sound hook makes use of bell and tick sounds to announce breaks, ensuring you pace your learning and ace your goals!",
               "\n\n",
-              "P.S Kamatis means Tomato in Tagalog.",
+              "P.S. Named after 'kamatis' which means 'tomato' in Tagalog.",
             ]}
             imgPath={kamatimer}
             builtWith="React, The 'use-sound' Hook, TypeScript and Tailwind CSS"

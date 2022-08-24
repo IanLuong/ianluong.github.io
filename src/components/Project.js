@@ -37,7 +37,7 @@ export default function Project({
         <p className="font-inter mb-4 whitespace-pre-line text-lg">{desc}</p>
         <div className="flex gap-4 justify-left">
           {repoPath && (
-            <a href={repoPath}>
+            <a href={repoPath} target="_blank" rel="noreferrer">
               <div className="project-button">
                 <FontAwesomeIcon icon={faGithub} size="lg" />
                 Repo
@@ -45,7 +45,7 @@ export default function Project({
             </a>
           )}
           {sourcePath && (
-            <a href={sourcePath}>
+            <a href={sourcePath} target="_blank" rel="noreferrer">
               <div className="project-button">
                 <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" />
                 Demo
