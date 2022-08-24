@@ -17,13 +17,14 @@ module.exports = {
         'light-blue': '#B8E1FF'
       },
       animation: {
-        fade2s: "fade 2s ease-in-out",
-        fade4s: "fade 4s ease-in-out",
-        fade6s: "fade 6s ease-in-out",
+        fade2s: "fade ease-in 2s",
+        fade4s: "fade ease-in 4s",
+        fade8s: "fade ease-in 8s",
       },
       keyframes: {
         fade: {
           "0%": { opacity: 0 },
+          "40%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
       },

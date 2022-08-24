@@ -17,10 +17,10 @@ export default function Hero() {
             <span className="font-inter text-xl">i'm a </span> Frontend
             Developer.
           </h1>
-          <div className="animate-fade6s">
+          <div className="animate-fade8s">
             <ContactBar />
           </div>
-          <div className="font-inter absolute bottom-4 animate-fade6s">
+          <div className="font-inter absolute bottom-4 animate-fade8s">
             <h3 className="text-xl">Get to know me!</h3>
             <FontAwesomeIcon
               className="hover:text-white cursor-pointer drop-shadow-md animate-bounce"
