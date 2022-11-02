@@ -3,6 +3,7 @@ import kamatimer from "../img/kamatimer.png"
 import quiz from "../img/quiz.png"
 import spoofy from "../img/spoofy.png"
 import portfolio from "../img/portfolio.png"
+import whatdoio from "../img/whatdoio.png"
 
 export default function Projects() {
   return (
@@ -27,6 +28,18 @@ export default function Projects() {
             isLeft={true}
           />
           <Project
+            title="WhatDo.io"
+            desc={[
+              "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication to track your expenses on the go.",
+              "\n\n",
+              "Built the backend REST API using MongoDB, Express and Node.js, with the front end using React.",
+            ]}
+            imgPath={whatdoio}
+            builtWith="MERN Stack"
+            repoPath="https://github.com/IanLuong/what-do-i-owe"
+            isLeft={false}
+          />
+          <Project
             title="Anime Quiz"
             desc={[
               "Mini quiz app made to entertain a growing, local anime community. Quiz questions are pulled from the Open Trivia DB API and contain both multiple choice and true or false questions.",
@@ -37,7 +50,7 @@ export default function Projects() {
             builtWith="React, Open Trivia Database API"
             repoPath="https://github.com/IanLuong/anime-quiz"
             sourcePath="http://ianluong.github.io/anime-quiz"
-            isLeft={false}
+            isLeft={true}
           />
           <Project
             title="My Portfolio"
@@ -49,7 +62,7 @@ export default function Projects() {
             imgPath={portfolio}
             builtWith="React, Tailwind CSS and most importantly... love :)"
             sourcePath="http://ianluong.github.io/"
-            isLeft={true}
+            isLeft={false}
           />
           <Project
             title="KamaTimer"
@@ -62,7 +75,7 @@ export default function Projects() {
             builtWith="React, The 'use-sound' Hook, TypeScript and Tailwind CSS"
             repoPath="https://github.com/IanLuong/kamatimer"
             sourcePath="http://ianluong.github.io/kamatimer"
-            isLeft={false}
+            isLeft={true}
           />
         </div>
       </div>
