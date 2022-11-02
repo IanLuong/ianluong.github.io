@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.9fe1ba75.css",
-    "main.js": "/static/js/main.178c6c43.js",
+    "main.js": "/static/js/main.bd57c842.js",
     "static/media/spoofy.png": "/static/media/spoofy.05bf94a2eee020304864.png",
     "static/media/pexels-enes-bayraktar-11306305.jpg": "/static/media/pexels-enes-bayraktar-11306305.313d5161119b8cb7afe9.jpg",
     "static/media/quiz.png": "/static/media/quiz.736a8c70e525050ef121.png",
+    "static/media/whatdoio.png": "/static/media/whatdoio.4d6c52494ee1e3630920.png",
     "static/media/portfolio.png": "/static/media/portfolio.931c0e210d1309bd00d3.png",
     "static/media/kamatimer.png": "/static/media/kamatimer.8478e85cdcd0eab7c05a.png",
     "index.html": "/index.html",
     "main.9fe1ba75.css.map": "/static/css/main.9fe1ba75.css.map",
-    "main.178c6c43.js.map": "/static/js/main.178c6c43.js.map"
+    "main.bd57c842.js.map": "/static/js/main.bd57c842.js.map"
   },
   "entrypoints": [
     "static/css/main.9fe1ba75.css",
-    "static/js/main.178c6c43.js"
+    "static/js/main.bd57c842.js"
   ]
 }
