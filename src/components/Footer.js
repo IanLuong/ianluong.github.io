@@ -49,13 +49,13 @@ export default function Footer() {
             Feel free to get in touch with me!
           </p>
           <p className="text-white font-bold">
-            Whether it's to talk about a frontend job or just to chat about
+            Whether it's to talk about a web dev job or just to chat about
             Gundam and Badminton, shoot me a message and I'll get back to you
             ASAP!
           </p>
           <p className="text-white">Email me at ianluongcodes@gmail.com</p>
           <div className="md:self-start">
-            <ContactBar color="black"/>
+            <ContactBar color="black" />
           </div>
           <form
             ref={form}

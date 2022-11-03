@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="font-inter text-xl">hi i'm </span>Ian Luong.
           </h1>
           <h1 className="font-ibarra drop-shadow-md text-6xl animate-fade3s">
-            <span className="font-inter text-xl">i'm a </span> Frontend
+            <span className="font-inter text-xl">i'm a </span> Full-Stack
             Developer.
           </h1>
           <div className="animate-fade6s">
@@ -42,7 +42,7 @@ export default function Hero() {
             </h1>
             <p></p>
             <h4 className="text-3xl font-medium">
-              Hi, I'm Ian. <span className="text-lg">[ee-uhn]</span>
+              Hi, I'm Ian. <span className="text-lg">[Nice to meet ya!]</span>
             </h4>
             <p>
               I am a recent Computer Science graduate from King's College London
@@ -79,8 +79,8 @@ export default function Hero() {
               </span>
             </p>
             <p>
-              I currently work with HTML, CSS, JavaScript, React, and Tailwind
-              CSS to build quality front-end products.
+              I currently work with HTML, CSS, JavaScript, React, Node.js and
+              Tailwind CSS to build quality web apps.
             </p>
           </div>
         </div>
