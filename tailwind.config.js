@@ -7,6 +7,7 @@ export default {
         almostWhite: '#F8F8F8',
         almostGrey: '#8D8D8D',
         almostBlack: '#212121',
+        amaranthPink: '#F19CBB',
       },
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
