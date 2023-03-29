@@ -18,7 +18,7 @@ const SidebarDropdown = ({ title, options }) => {
         <ul className={`${isExpanded ? 'flex' : 'hidden'} flex-col gap-4 my-4`}>
           {options.map((option) => (
             <li>
-              <a className="flex items-center gap-4 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack">
+              <a className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack">
                 {option.image && (
                   <img className="w-4" src={option.image} alt={option.title} />
                 )}
