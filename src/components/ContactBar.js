@@ -1,13 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faInstagram,
   faGithub,
-} from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
-export default function ContactBar({ color = "white" }) {
-  const activeColor = color === "white" ? "black" : "white"
+export default function ContactBar({ color = 'white' }) {
+  const activeColor = color === 'white' ? 'black' : 'white'
 
   return (
     <div className={`flex gap-4 items-center self-center text-${color}`}>
@@ -42,6 +42,14 @@ export default function ContactBar({ color = "white" }) {
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faEnvelope} size="3x" />
+      </a>
+      <a
+        href="/cv.pdf"
+        target="_blank"
+        className={`hover:text-${activeColor} focus:text-${activeColor} hover:animate-pulse`}
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faFilePdf} size="3x" />
       </a>
     </div>
   )
