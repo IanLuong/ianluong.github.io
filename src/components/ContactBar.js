@@ -44,7 +44,7 @@ export default function ContactBar({ color = 'white' }) {
         <FontAwesomeIcon icon={faEnvelope} size="3x" />
       </a>
       <a
-        href="/cv.pdf"
+        href="/IanLuongCV.pdf"
         target="_blank"
         className={`hover:text-${activeColor} focus:text-${activeColor} hover:animate-pulse`}
         rel="noreferrer"
