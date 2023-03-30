@@ -12,10 +12,8 @@ const App = () => {
         sidebarVisible={sidebarVisible}
         setSidebarVisible={setSidebarVisible}
       />
-      <div className="gradi bg-[url('images/IMG_3677.jpg')] bg-contain flex flex-col min-h-screen">
-        <Header setSidebarVisible={setSidebarVisible} />
-        <Hero />
-      </div>
+      <Header setSidebarVisible={setSidebarVisible} />
+      <Hero />
     </div>
   )
 }

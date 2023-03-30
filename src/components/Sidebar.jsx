@@ -7,10 +7,10 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
     <section
       className={`${
         sidebarVisible ? 'flex' : 'hidden'
-      } sm:hidden w-screen h-screen fixed`}
+      } sm:hidden w-screen h-screen fixed z-20`}
     >
       <div className="flex-1 bg-black opacity-80"></div>
-      <div className="flex flex-col w-2/3 bg-white p-4 gap-4">
+      <div className="flex flex-col w-2/3 bg-almostWhite px-4 py-6 gap-4 border-l-2 border-almostBlack">
         <img
           className="w-7 self-end mb-10"
           onClick={() => setSidebarVisible(false)}
