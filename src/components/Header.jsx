@@ -1,6 +1,6 @@
 import menuOpen from '/icons/nav-bars.svg'
 
-const Header = () => {
+const Header = ({ setSidebarVisible }) => {
   return (
     <header className="p-4">
       <div className="flex justify-between items-center">

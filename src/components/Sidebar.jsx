@@ -2,18 +2,18 @@ import menuClose from '/icons/nav-xmark.svg'
 import SidebarDropdown from './SidebarDropdown'
 import workOptions from '../data/sidebarWorkOptions.json'
 
-const Sidebar = ({ visible, setVisible }) => {
+const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
   return (
     <section
       className={`${
-        visible ? 'flex' : 'hidden'
+        sidebarVisible ? 'flex' : 'hidden'
       } sm:hidden w-screen h-screen fixed`}
     >
       <div className="flex-1 bg-black opacity-80"></div>
-      <div className="flex flex-col w-2/3 bg-white p-4">
+      <div className="flex flex-col w-2/3 bg-white p-4 gap-4">
         <img
           className="w-7 self-end mb-10"
-          onClick={() => setVisible(false)}
+          onClick={() => setSidebarVisible(false)}
           src={menuClose}
           alt="Close sidebar"
           title="Close sidebar"
@@ -48,6 +48,12 @@ const Sidebar = ({ visible, setVisible }) => {
             </li>
           </ul>
         </nav>
+        <a
+          href="/IanLuongCV.pdf"
+          className="text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
+        >
+          Resume / CV
+        </a>
       </div>
     </section>
   )
