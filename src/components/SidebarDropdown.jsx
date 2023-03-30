@@ -10,7 +10,7 @@ const SidebarDropdown = ({ title, options }) => {
     <li>
       <span
         onClick={() => setIsExpanded((prev) => !prev)}
-        className="flex items-center gap-4 cursor-pointer hover:text-almostBlack"
+        className="text-xl flex items-center gap-4 cursor-pointer hover:text-almostBlack"
       >
         <p>{title}</p>
         <img className="w-3" src={isExpanded ? iconArrowUp : iconArrowDown} />
@@ -20,7 +20,7 @@ const SidebarDropdown = ({ title, options }) => {
           {options.map((option) => (
             <li>
               <Link
-                to={`/my-work#${option.link}`}
+                to={`${option.link}`}
                 className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack"
               >
                 {option.image && (

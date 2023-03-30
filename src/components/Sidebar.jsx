@@ -24,7 +24,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
           <ul className="flex flex-col gap-4 text-almostGrey">
             <li>
               <Link
-                className="cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
                 to="/"
               >
                 Home
@@ -32,7 +32,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
             </li>
             <li>
               <Link
-                className="cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
                 to="/about"
               >
                 About
@@ -40,20 +40,18 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
             </li>
             <SidebarDropdown title="My Work" options={workOptions} />
             <li>
-              <li>
-                <Link
-                  className="cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                  to="/contact"
-                >
-                  Contact
-                </Link>
-              </li>
+              <Link
+                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                to="/contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
         <a
           href="/IanLuongCV.pdf"
-          className="text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
+          className="text- text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
         >
           Resume / CV
         </a>
