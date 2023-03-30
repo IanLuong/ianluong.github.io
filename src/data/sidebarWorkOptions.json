@@ -1,6 +1,14 @@
 [
-  { "image": "/icons/wallet.svg", "title": "WhatDo.io" },
-  { "image": "/icons/clock.svg", "title": "KamaTimer" },
-  { "image": "/icons/imac.svg", "title": "Frontend Mentor" },
-  { "image": "/icons/headphones.svg", "title": "Spoofy Records" }
+  { "image": "/icons/wallet.svg", "title": "WhatDo.io", "link": "whatdoio" },
+  { "image": "/icons/clock.svg", "title": "KamaTimer", "link": "kamatimer" },
+  {
+    "image": "/icons/imac.svg",
+    "title": "Frontend Mentor",
+    "link": "frontendmentor"
+  },
+  {
+    "image": "/icons/headphones.svg",
+    "title": "Spoofy Records",
+    "link": "spoofyrecords"
+  }
 ]
