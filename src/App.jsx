@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
-import Home from './components/Home'
-import About from './components/About'
-import Work from './components/Work'
+import Home from './pages/Home'
+import About from './pages/About'
+import Work from './pages/Work'
 import Sidebar from './components/Sidebar'
+import Contact from './pages/Contact'
 
 const App = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false)
@@ -22,6 +23,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/my-work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </BrowserRouter>
