@@ -36,12 +36,16 @@ const skills = [
 const projects = [
   {
     name: 'whatdo.io',
+    description:
+      'A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.',
     image: '/images/whatdoio.png',
     skills: ['typescript', 'react', 'node.js & express', 'mongoDB'],
     demo: 'https://what-do-io.fly.dev',
   },
   {
     name: 'kamatimer',
+    description:
+      "A Pomodoro Timer Web App created for friends and family to keep focused, featuring customizable focus/break timing and a dark mode.\n\nP.S. Named after 'kamatis' which means 'tomato' in Tagalog.",
     image: '/images/kamatimer.png',
     skills: ['html', 'css', 'typescript', 'react'],
     demo: 'https://ianluong.github.io/kamatimer/',
@@ -49,6 +53,8 @@ const projects = [
   },
   {
     name: 'frontend mentor',
+    description:
+      'A collection of the challenges I have completed as part of Frontend Mentor.\n\nFrontend Mentor challenges help you improve your coding skills by building realistic projects.',
     image: '/images/frontendmentor.png',
     skills: ['javascript', 'react', 'typescript', 'vite'],
     link: 'https://www.frontendmentor.io/profile/IanLuong',
@@ -56,6 +62,8 @@ const projects = [
   },
   {
     name: 'spoofy records',
+    description:
+      'Record store website produced to replicate an online shopping experience. Features include a shopping cart, info pages for the records and more!\n\n(Feel free to take a peek at my music taste and maybe some records that I own)',
     image: '/images/spoofy.png',
     skills: ['html', 'css', 'javascript', 'react'],
     demo: 'https://ianluong.github.io/shopping-cart/',
@@ -110,7 +118,9 @@ const Project = ({ project }) => (
         <p className="text-almostGrey">{skill}</p>
       ))}
     </div>
-    {project.description && <p>{project.description}</p>}
+    {project.description && (
+      <p className="whitespace-pre-wrap">{project.description}</p>
+    )}
     <div className="flex gap-3 text-lg">
       {project.link && (
         <a
