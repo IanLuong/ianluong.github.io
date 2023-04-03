@@ -1,0 +1,34 @@
+[
+  {
+    "name": "html",
+    "experience": "4 years"
+  },
+  {
+    "name": "css",
+    "experience": "4 years"
+  },
+  {
+    "name": "javascript",
+    "experience": "4 years"
+  },
+  {
+    "name": "react",
+    "experience": "3 years"
+  },
+  {
+    "name": "git",
+    "experience": "4 years"
+  },
+  {
+    "name": "mongoDB",
+    "experience": "2 years"
+  },
+  {
+    "name": "node.js & express",
+    "experience": "2 years"
+  },
+  {
+    "name": "typescript",
+    "experience": "1 year"
+  }
+]

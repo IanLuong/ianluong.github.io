@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -11,22 +10,20 @@ const App = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false)
 
   return (
-    <BrowserRouter>
-      <div className="font-rubik relative">
-        <Sidebar
-          sidebarVisible={sidebarVisible}
-          setSidebarVisible={setSidebarVisible}
-        />
-        <Header setSidebarVisible={setSidebarVisible} />
+    <div className="font-rubik relative bg-almostWhite">
+      <Sidebar
+        sidebarVisible={sidebarVisible}
+        setSidebarVisible={setSidebarVisible}
+      />
 
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/my-work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+      <Header setSidebarVisible={setSidebarVisible} />
+      <main>
+        <Home />
+        <About />
+        <Work />
+        <Contact />
+      </main>
+    </div>
   )
 }
 

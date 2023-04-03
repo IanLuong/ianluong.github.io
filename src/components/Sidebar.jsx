@@ -1,7 +1,6 @@
 import menuClose from '/icons/nav-xmark.svg'
 import SidebarDropdown from './SidebarDropdown'
 import workOptions from '../data/sidebarWorkOptions.json'
-import { Link } from 'react-router-dom'
 
 const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
   return (
@@ -23,29 +22,29 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
         <nav>
           <ul className="flex flex-col gap-4 text-almostGrey">
             <li>
-              <Link
+              <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                to="/"
+                href="/"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                to="/about"
+                href="/about"
               >
                 About
-              </Link>
+              </a>
             </li>
             <SidebarDropdown title="My Work" options={workOptions} />
             <li>
-              <Link
+              <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                to="/contact"
+                href="/contact"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
