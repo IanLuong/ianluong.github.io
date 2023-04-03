@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import menuOpen from '/icons/nav-bars.svg'
 
 const Header = ({ setSidebarVisible }) => {
@@ -17,12 +18,39 @@ const Header = ({ setSidebarVisible }) => {
         />
 
         <nav className="hidden sm:block">
-          <ul className="flex gap-4 text-almostGrey">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>My Work</li>
-            <li>Contact</li>
+          <ul className="flex gap-4 text-lg font-medium text-almostBlack">
+            <li>
+              <Link
+                className="cursor-pointer hover:underline decoration-double"
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="cursor-pointer hover:underline decoration-double"
+                to="/about"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="cursor-pointer hover:underline decoration-double"
+                to="/my-work"
+              >
+                My Work
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="cursor-pointer hover:underline decoration-double"
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
