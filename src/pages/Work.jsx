@@ -1,3 +1,7 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLaptop, faLink } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const skills = [
   {
     name: 'html',
@@ -16,7 +20,7 @@ const skills = [
     experience: '3 years',
   },
   {
-    name: 'Git',
+    name: 'git',
     experience: '4 years',
   },
   {
@@ -127,6 +131,7 @@ const Project = ({ project }) => (
           className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack"
           href={project.link}
         >
+          <FontAwesomeIcon icon={faLink} className="pr-2" />
           Link
         </a>
       )}
@@ -135,6 +140,7 @@ const Project = ({ project }) => (
           className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack"
           href={project.demo}
         >
+          <FontAwesomeIcon icon={faLaptop} className="pr-2" />
           Demo
         </a>
       )}
@@ -143,6 +149,7 @@ const Project = ({ project }) => (
           className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack"
           href={project.repo}
         >
+          <FontAwesomeIcon icon={faGithub} className="pr-2" />
           Code
         </a>
       )}
