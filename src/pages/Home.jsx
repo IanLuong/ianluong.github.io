@@ -18,7 +18,7 @@ const Hero = ({ scrollTo, section }) => {
       className="flex-1 flex flex-col min-h-screen"
     >
       <img src={heroImageColor} alt="Ian Luong" />
-      <div className="w-full flex-1 flex flex-col bg-almostWhite border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
+      <div className="w-full flex-1 flex flex-col border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
         <div className="flex flex-col items-start">
           <div className="flex w-full justify-between items-center">
             <h2 className="font-medium text-2xl">ian luong.</h2>

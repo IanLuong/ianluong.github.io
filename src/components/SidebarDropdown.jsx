@@ -15,7 +15,7 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
         <img className="w-3" src={isExpanded ? iconArrowUp : iconArrowDown} />
       </span>
       {options && (
-        <ul className={`${isExpanded ? 'flex' : 'hidden'} flex-col gap-4 my-4`}>
+        <ul className={`${isExpanded ? 'flex' : 'hidden'} flex-col gap-4 mt-4`}>
           <li>
             <a
               href={`#projects`}
