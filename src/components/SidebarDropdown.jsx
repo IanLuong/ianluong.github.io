@@ -16,6 +16,15 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
       </span>
       {options && (
         <ul className={`${isExpanded ? 'flex' : 'hidden'} flex-col gap-4 my-4`}>
+          <li>
+            <a
+              href={`#projects`}
+              onClick={(event) => handleSidebarClick(event, sections[0].ref)}
+              className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+            >
+              <p>All</p>
+            </a>
+          </li>
           {options.map((option, index) => (
             <li>
               <a
@@ -25,10 +34,10 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
                 }
                 className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack"
               >
-                {option.image && (
-                  <img className="w-4" src={option.image} alt={option.title} />
+                {option.icon && (
+                  <img className="w-4" src={option.icon} alt={option.title} />
                 )}
-                <p>{option.title}</p>
+                <p>{option.name}</p>
               </a>
             </li>
           ))}

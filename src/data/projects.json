@@ -1,7 +1,8 @@
 [
   {
     "id": 0,
-    "name": "whatdo.io",
+    "name": "Whatdo.io",
+    "icon": "/icons/wallet.svg",
     "domId": "whatdoio",
     "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication with JWTs to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",
     "image": "/images/whatdoio.png",
@@ -10,7 +11,8 @@
   },
   {
     "id": 1,
-    "name": "kamatimer",
+    "name": "KamaTimer",
+    "icon": "/icons/clock.svg",
     "domId": "kamatimer",
     "description": "A Pomodoro Timer Web App created to keep focused, featuring customizable focus/break timing and a dark mode.\n\nP.S. Named after 'kamatis' which means 'tomato' in Tagalog.",
     "image": "/images/kamatimer.png",
@@ -20,7 +22,8 @@
   },
   {
     "id": 2,
-    "name": "frontend mentor",
+    "name": "Frontend Mentor",
+    "icon": "/icons/imac.svg",
     "domId": "frontendmentor",
     "description": "A collection of the challenges I have completed as part of Frontend Mentor.\n\nFrontend Mentor challenges help you improve your coding skills by building realistic projects.",
     "image": "/images/frontendmentor.png",
@@ -30,7 +33,8 @@
   },
   {
     "id": 3,
-    "name": "spoofy records",
+    "name": "Spoofy Records",
+    "icon": "/icons/headphones.svg",
     "domId": "spoofyrecords",
     "description": "Mock record store website produced for an online shopping experience. Features include a shopping cart, info pages for the records and more!\n\n(Feel free to take a peek at my music taste and maybe some records that I own)",
     "image": "/images/spoofy.png",

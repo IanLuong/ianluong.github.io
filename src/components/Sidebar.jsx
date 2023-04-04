@@ -1,6 +1,6 @@
 import menuClose from '/icons/nav-xmark.svg'
 import SidebarDropdown from './SidebarDropdown'
-import workOptions from '../data/sidebarWorkOptions.json'
+import projects from '../data/projects.json'
 
 const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
   const handleSidebarClick = (event, ref) => {
@@ -55,10 +55,10 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
               </a>
             </li>
             <SidebarDropdown
-              title="My Work"
+              title="Projects"
               handleSidebarClick={handleSidebarClick}
               sections={sections.slice(3, 8)}
-              options={workOptions}
+              options={projects}
             />
             <li>
               <a
