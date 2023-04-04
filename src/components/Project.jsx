@@ -2,9 +2,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLaptop, faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Project({ project }) {
+export default function Project({ section, project }) {
+  console.log(section.title)
   return (
-    <div id={project.name} className="flex flex-col gap-2 my-4">
+    <div
+      id={section.title}
+      ref={section.ref}
+      className="flex flex-col gap-2 my-4 scroll-m-2"
+    >
       <img
         className="border-2 border-almostBlack rounded-lg"
         src={project.image}
@@ -22,7 +27,7 @@ export default function Project({ project }) {
       <div className="flex gap-3 text-lg">
         {project.link && (
           <a
-            className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack"
+            className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack bg-amaranthPink"
             href={project.link}
           >
             <FontAwesomeIcon icon={faLink} className="pr-2" />

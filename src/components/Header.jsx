@@ -4,7 +4,7 @@ const Header = ({ setSidebarVisible }) => {
   return (
     <header className="absolute w-screen p-4 z-10">
       <div className="flex justify-between items-center">
-        <span className="font-semibold text-3xl px-4 py-2 rounded-xl border-2 border-almostBlack shadow-xl ">
+        <span className="font-semibold text-3xl px-4 py-2 rounded-xl border-2 border-almostBlack shadow-xl bg-almostWhite">
           ian.
         </span>
 

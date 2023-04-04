@@ -1,6 +1,10 @@
-const About = () => {
+const About = ({ section }) => {
   return (
-    <section className="flex flex-col gap-4 my-12">
+    <section
+      id={section.title}
+      ref={section.ref}
+      className="flex flex-col gap-4 my-12"
+    >
       <div className="w-full flex flex-col self-end gap-3 px-4 py-2">
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           🖥 about me.
@@ -26,7 +30,7 @@ const About = () => {
           <p>
             Outside of web development, I love playing{' '}
             <span className="font-semibold">badminton</span> in my free time. I
-            also love to play <span className="font-semibold">video games</span>{' '}
+            also play <span className="font-semibold">video games</span>{' '}
             whenever I feel the need to unwind (right now I'm playing{' '}
             <span className="font-medium">Celeste</span> and{' '}
             <span className="font-medium">Resident Evil 3 Remake</span>!) as

@@ -10,9 +10,13 @@ import heroArrows from '/icons/hero-arrows.svg'
 import heroImage from '/images/portrait.jpg'
 import heroImageColor from '/images/portrait_color.jpg'
 
-const Hero = () => {
+const Hero = ({ scrollTo, section }) => {
   return (
-    <section className="flex-1 flex flex-col min-h-screen">
+    <section
+      id={section.title}
+      ref={section.ref}
+      className="flex-1 flex flex-col min-h-screen"
+    >
       <img src={heroImageColor} alt="Ian Luong" />
       <div className="w-full flex-1 flex flex-col bg-almostWhite border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
         <div className="flex flex-col items-start">
@@ -34,8 +38,9 @@ const Hero = () => {
         </p>
         <div className="flex w-full gap-4">
           <a
-            href="/my-work"
-            className="flex gap-2  font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack"
+            className="flex gap-2 font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack"
+            href="#projects"
+            onClick={(event) => scrollTo(event)}
           >
             See My Work
             <img className="w-6" src={heroArrows} alt="See more" />

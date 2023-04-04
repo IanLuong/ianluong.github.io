@@ -1,21 +1,27 @@
 [
   {
+    "id": 0,
     "name": "whatdo.io",
-    "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",
+    "domId": "whatdoio",
+    "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication with JWTs to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",
     "image": "/images/whatdoio.png",
     "skills": ["typescript", "react", "node.js & express", "mongoDB"],
     "demo": "https://what-do-io.fly.dev"
   },
   {
+    "id": 1,
     "name": "kamatimer",
-    "description": "A Pomodoro Timer Web App created for friends and family to keep focused, featuring customizable focus/break timing and a dark mode.\n\nP.S. Named after 'kamatis' which means 'tomato' in Tagalog.",
+    "domId": "kamatimer",
+    "description": "A Pomodoro Timer Web App created to keep focused, featuring customizable focus/break timing and a dark mode.\n\nP.S. Named after 'kamatis' which means 'tomato' in Tagalog.",
     "image": "/images/kamatimer.png",
     "skills": ["html", "css", "typescript", "react"],
     "demo": "https://ianluong.github.io/kamatimer/",
     "repo": "https://github.com/IanLuong/kamatimer"
   },
   {
+    "id": 2,
     "name": "frontend mentor",
+    "domId": "frontendmentor",
     "description": "A collection of the challenges I have completed as part of Frontend Mentor.\n\nFrontend Mentor challenges help you improve your coding skills by building realistic projects.",
     "image": "/images/frontendmentor.png",
     "skills": ["javascript", "react", "typescript", "vite"],
@@ -23,8 +29,10 @@
     "repo": "https://github.com/IanLuong/frontend-mentor-challenges"
   },
   {
+    "id": 3,
     "name": "spoofy records",
-    "description": "Record store website produced to replicate an online shopping experience. Features include a shopping cart, info pages for the records and more!\n\n(Feel free to take a peek at my music taste and maybe some records that I own)",
+    "domId": "spoofyrecords",
+    "description": "Mock record store website produced for an online shopping experience. Features include a shopping cart, info pages for the records and more!\n\n(Feel free to take a peek at my music taste and maybe some records that I own)",
     "image": "/images/spoofy.png",
     "skills": ["html", "css", "javascript", "react"],
     "demo": "https://ianluong.github.io/shopping-cart/",

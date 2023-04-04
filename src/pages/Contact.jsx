@@ -1,8 +1,12 @@
 import heroArrows from '/icons/hero-arrows.svg'
 
-const Contact = () => {
+const Contact = ({ section }) => {
   return (
-    <section className="flex flex-col my-12">
+    <section
+      id={section.title}
+      ref={section.ref}
+      className="flex flex-col my-12"
+    >
       <div className="w-full flex-1 flex flex-col self-end gap-3 px-4 py-2">
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           contact me.

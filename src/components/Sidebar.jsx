@@ -2,7 +2,13 @@ import menuClose from '/icons/nav-xmark.svg'
 import SidebarDropdown from './SidebarDropdown'
 import workOptions from '../data/sidebarWorkOptions.json'
 
-const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
+const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
+  const handleSidebarClick = (event, ref) => {
+    event.preventDefault()
+    setSidebarVisible(false)
+    scrollTo(event, ref)
+  }
+
   return (
     <section
       className={`${
@@ -24,7 +30,8 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
             <li>
               <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                href="/"
+                href={`#${sections[0].title}`}
+                onClick={(event) => handleSidebarClick(event, sections[0].ref)}
               >
                 Home
               </a>
@@ -32,16 +39,32 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible }) => {
             <li>
               <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                href="/about"
+                href={`#${sections[1].title}`}
+                onClick={(event) => handleSidebarClick(event, sections[1].ref)}
               >
                 About
               </a>
             </li>
-            <SidebarDropdown title="My Work" options={workOptions} />
             <li>
               <a
                 className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                href="/contact"
+                href={`#${sections[2].title}`}
+                onClick={(event) => handleSidebarClick(event, sections[2].ref)}
+              >
+                Skills
+              </a>
+            </li>
+            <SidebarDropdown
+              title="My Work"
+              handleSidebarClick={handleSidebarClick}
+              sections={sections.slice(3, 8)}
+              options={workOptions}
+            />
+            <li>
+              <a
+                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                href={`#${sections[8].title}`}
+                onClick={(event) => handleSidebarClick(event, sections[8].ref)}
               >
                 Contact
               </a>
