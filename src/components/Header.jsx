@@ -1,6 +1,6 @@
 import menuOpen from '/icons/nav-bars.svg'
 
-const Header = ({ setSidebarVisible }) => {
+const Header = ({ setSidebarVisible, sections, scrollTo }) => {
   return (
     <header className="max-w-5xl m-auto absolute sm:relative sm:block w-screen p-4 z-10">
       <div className="flex justify-between items-center max-w-5xl m-auto">
@@ -12,8 +12,8 @@ const Header = ({ setSidebarVisible }) => {
           className="w-6 sm:hidden"
           onClick={() => setSidebarVisible(true)}
           src={menuOpen}
-          alt=""
-          title=""
+          alt="Open Sidebar"
+          title="Open Sidebar"
         />
 
         <nav className="hidden sm:block">
@@ -22,6 +22,7 @@ const Header = ({ setSidebarVisible }) => {
               <a
                 className="cursor-pointer hover:underline decoration-double"
                 href="#about"
+                onClick={(event) => scrollTo(event, sections[1].ref)}
               >
                 About
               </a>
@@ -30,6 +31,7 @@ const Header = ({ setSidebarVisible }) => {
               <a
                 className="cursor-pointer hover:underline decoration-double"
                 href="#skills"
+                onClick={(event) => scrollTo(event, sections[2].ref)}
               >
                 Skills
               </a>
@@ -38,6 +40,7 @@ const Header = ({ setSidebarVisible }) => {
               <a
                 className="cursor-pointer hover:underline decoration-double"
                 href="#projects"
+                onClick={(event) => scrollTo(event, sections[3].ref)}
               >
                 Projects
               </a>
@@ -46,6 +49,7 @@ const Header = ({ setSidebarVisible }) => {
               <a
                 className="cursor-pointer hover:underline decoration-double"
                 href="#contact"
+                onClick={(event) => scrollTo(event, sections[8].ref)}
               >
                 Contact
               </a>

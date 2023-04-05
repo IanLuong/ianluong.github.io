@@ -44,14 +44,18 @@ const App = () => {
         scrollTo={scrollTo}
       />
 
-      <Header setSidebarVisible={setSidebarVisible} />
+      <Header
+        setSidebarVisible={setSidebarVisible}
+        sections={sections}
+        scrollTo={scrollTo}
+      />
       <main className="max-w-5xl m-auto">
         <Home section={sections[0]} scrollTo={scrollTo} />
         <About section={sections[1]} />
         <Work sections={sections.slice(2, 8)} />
         <Contact section={sections[8]} />
       </main>
-      <Footer />
+      <Footer sections={sections} scrollTo={scrollTo} />
     </div>
   )
 }

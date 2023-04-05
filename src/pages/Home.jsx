@@ -26,10 +26,34 @@ const Hero = ({ scrollTo, section }) => {
           <div className="flex w-full justify-between items-center">
             <h2 className="font-medium text-2xl">ian luong.</h2>
             <div className="flex gap-4">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-              <FontAwesomeIcon icon={faFilePdf} size="2x" />
+              <a
+                className="cursor-pointer hover:animate-pulse"
+                href="https://github.com/IanLuong"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+              <a
+                className="cursor-pointer hover:animate-pulse"
+                href="https://www.linkedin.com/in/ianluong/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+              <a
+                className="cursor-pointer hover:animate-pulse"
+                href="https://www.instagram.com/ian__luong/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a
+                className="cursor-pointer hover:animate-pulse"
+                href="/IanLuongCV.pdf"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faFilePdf} size="2x" />
+              </a>
             </div>
           </div>
           <h1 className="font-semibold text-4xl">web developer.</h1>
