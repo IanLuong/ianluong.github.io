@@ -5,6 +5,7 @@ import About from './pages/About'
 import Work from './pages/Work'
 import Sidebar from './components/Sidebar'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 const sectionTitles = [
   'home',
@@ -50,6 +51,7 @@ const App = () => {
         <Work sections={sections.slice(2, 8)} />
         <Contact section={sections[8]} />
       </main>
+      <Footer />
     </div>
   )
 }

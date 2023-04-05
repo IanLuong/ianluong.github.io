@@ -14,11 +14,11 @@ const Hero = ({ scrollTo, section }) => {
     <section
       id={section.title}
       ref={section.ref}
-      className="flex-1 flex flex-col justify-self-center sm:flex-row sm:justify-between sm:gap-4 sm:px-4 min-h-screen"
+      className="flex-1 flex flex-col justify-self-center sm:flex-row sm:justify-between sm:gap-4 sm:px-4 min-h-screen sm:min-h-[90vh]"
     >
       <img
-        className="sm:w-1/2 md:w-3/4 sm:order-2 sm:self-center sm:border-4 sm:border-almostBlack sm:rounded-xl"
-        src={heroImageMobile}
+        className="sm:w-1/2 md:max-w-[528px] sm:order-2 sm:self-center sm:border-4 sm:border-almostBlack sm:rounded-xl"
+        src={heroImageDesktop}
         alt="Ian Luong"
       />
       <div className="sm:max-w-md sm:flex-auto sm:self-center sm:border-0 w-full flex-1 flex flex-col border-t-2 border-almostBlack justify-center gap-3 px-4 py-4">
