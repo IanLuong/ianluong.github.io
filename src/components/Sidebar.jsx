@@ -73,7 +73,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
         </nav>
         <a
           href="/IanLuongCV.pdf"
-          className="text- text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
+          className="text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
         >
           Resume / CV
         </a>

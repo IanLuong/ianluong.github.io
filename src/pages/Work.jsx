@@ -16,7 +16,7 @@ const Work = ({ sections }) => {
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           skills.
         </h1>
-        <div>
+        <div className="sm:grid sm: grid-cols-2">
           {skills.map((skill) => (
             <Skill key={skill.id} skill={skill} />
           ))}
@@ -36,6 +36,7 @@ const Work = ({ sections }) => {
               section={projectSections[index]}
               key={project.id}
               project={project}
+              isLeft={index % 2 === 0}
             />
           ))}
         </div>

@@ -26,7 +26,7 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
             </a>
           </li>
           {options.map((option, index) => (
-            <li>
+            <li key={index}>
               <a
                 href={`#${sections[index].title}`}
                 onClick={(event) =>

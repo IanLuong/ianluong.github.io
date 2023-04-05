@@ -28,7 +28,6 @@ const App = () => {
   const workRef = useRef(null)
 
   const scrollTo = (event, ref) => {
-    console.log(ref)
     event.preventDefault()
     ref.current.scrollIntoView({
       behavior: 'smooth',
@@ -36,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <div className="font-rubik relative bg-almostWhite w-full">
+    <div className="font-rubik relative bg-almostWhite">
       <Sidebar
         sidebarVisible={sidebarVisible}
         setSidebarVisible={setSidebarVisible}
@@ -45,7 +44,7 @@ const App = () => {
       />
 
       <Header setSidebarVisible={setSidebarVisible} />
-      <main>
+      <main className="max-w-5xl m-auto">
         <Home section={sections[0]} scrollTo={scrollTo} />
         <About section={sections[1]} />
         <Work sections={sections.slice(2, 8)} />

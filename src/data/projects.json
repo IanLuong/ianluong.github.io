@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Whatdo.io",
+    "name": "WhatDo.io",
     "icon": "/icons/wallet.svg",
     "domId": "whatdoio",
     "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication with JWTs to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",

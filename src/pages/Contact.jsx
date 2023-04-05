@@ -11,13 +11,13 @@ const Contact = ({ section }) => {
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           contact me.
         </h1>
-        <div className="flex-1 flex flex-col">
-          <p className="font-medium text-xl m-2 text-center">
+        <div className="flex-1 flex flex-col items-center">
+          <p className="font-medium text-xl m-2 text-center max-w-lg">
             I would love to hear about your project and how I could help. Please
             fill in the form, and I'll get back to you as soon as possible.
           </p>
 
-          <form className="flex-1 flex flex-col mx-2 my-8 gap-4 font-normal">
+          <form className="flex-1 flex flex-col mx-2 my-8 gap-4 font-normal max-w-xl w-full">
             <input
               className="p-2 border-b-2 border-almostGrey bg-almostWhite"
               type="text"

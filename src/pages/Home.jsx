@@ -5,20 +5,23 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import seeMore from '/icons/hero-circle-down.svg'
 import heroArrows from '/icons/hero-arrows.svg'
-import heroImage from '/images/portrait.jpg'
-import heroImageColor from '/images/portrait_color.jpg'
+import heroImageMobile from '/images/portrait_mobile.jpeg'
+import heroImageDesktop from '/images/portrait_desktop.jpeg'
 
 const Hero = ({ scrollTo, section }) => {
   return (
     <section
       id={section.title}
       ref={section.ref}
-      className="flex-1 flex flex-col min-h-screen"
+      className="flex-1 flex flex-col justify-self-center sm:flex-row sm:justify-between sm:gap-4 sm:px-4 min-h-screen"
     >
-      <img src={heroImageColor} alt="Ian Luong" />
-      <div className="w-full flex-1 flex flex-col border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
+      <img
+        className="sm:w-1/2 md:w-3/4 sm:order-2 sm:self-center sm:border-4 sm:border-almostBlack sm:rounded-xl"
+        src={heroImageMobile}
+        alt="Ian Luong"
+      />
+      <div className="max-w-md sm:flex-auto sm:self-center sm:border-0 w-full flex-1 flex flex-col border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
         <div className="flex flex-col items-start">
           <div className="flex w-full justify-between items-center">
             <h2 className="font-medium text-2xl">ian luong.</h2>
