@@ -25,7 +25,7 @@ const Work = ({ sections }) => {
       <div
         id={sections[1].title}
         ref={sections[1].ref}
-        className="w-full flex flex-col  self-end gap-3 px-4 py-2"
+        className="w-full flex flex-col self-end gap-3 px-4 py-2"
       >
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           projects.

@@ -9,7 +9,7 @@ const About = ({ section }) => {
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           🖥 about me.
         </h1>
-        <div className="flex-1 flex flex-col text-xl">
+        <div className="flex-1 flex flex-col text-xl max-w-4xl self-center">
           <p>
             Born and raised in East London, I'm a full stack web developer and a
             Computer Science graduate from King's College London. I love to
@@ -26,7 +26,7 @@ const About = ({ section }) => {
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           🏸 hobbies.
         </h1>
-        <div className="flex-1 flex flex-col text-xl">
+        <div className="flex-1 flex flex-col text-xl max-w-4xl self-center">
           <p>
             Outside of web development, I love playing{' '}
             <span className="font-semibold">badminton</span> in my free time. I

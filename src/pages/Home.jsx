@@ -21,7 +21,7 @@ const Hero = ({ scrollTo, section }) => {
         src={heroImageMobile}
         alt="Ian Luong"
       />
-      <div className="max-w-md sm:flex-auto sm:self-center sm:border-0 w-full flex-1 flex flex-col border-t-2 border-almostBlack self-end justify-center gap-3 px-4 py-4">
+      <div className="sm:max-w-md sm:flex-auto sm:self-center sm:border-0 w-full flex-1 flex flex-col border-t-2 border-almostBlack justify-center gap-3 px-4 py-4">
         <div className="flex flex-col items-start">
           <div className="flex w-full justify-between items-center">
             <h2 className="font-medium text-2xl">ian luong.</h2>
@@ -36,8 +36,9 @@ const Hero = ({ scrollTo, section }) => {
         </div>
         <p className="text-xl">
           Fullstack Web Developer and East End Londoner.
-          {/* <br />
-          Making weird stuff happen since 1998. */}
+          <br />
+          <br />
+          Making weird stuff happen since 1998.
         </p>
         <div className="flex w-full gap-4">
           <a

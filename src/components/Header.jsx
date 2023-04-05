@@ -21,7 +21,7 @@ const Header = ({ setSidebarVisible }) => {
             <li>
               <a
                 className="cursor-pointer hover:underline decoration-double"
-                href="/"
+                href="#home"
               >
                 Home
               </a>
@@ -29,7 +29,7 @@ const Header = ({ setSidebarVisible }) => {
             <li>
               <a
                 className="cursor-pointer hover:underline decoration-double"
-                href="/about"
+                href="#about"
               >
                 About
               </a>
@@ -37,15 +37,23 @@ const Header = ({ setSidebarVisible }) => {
             <li>
               <a
                 className="cursor-pointer hover:underline decoration-double"
-                href="/my-work"
+                href="#skills"
               >
-                My Work
+                Skills
               </a>
             </li>
             <li>
               <a
                 className="cursor-pointer hover:underline decoration-double"
-                href="/contact"
+                href="#projects"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                className="cursor-pointer hover:underline decoration-double"
+                href="#contact"
               >
                 Contact
               </a>

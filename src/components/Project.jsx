@@ -12,11 +12,11 @@ export default function Project({ section, project, isLeft }) {
       <img
         className={`${
           isLeft && 'lg:order-2'
-        } lg:flex-1 lg:w-1/2 self-center border-2 border-almostBlack rounded-lg`}
+        } lg:flex-1 lg:w-1/2 self-start border-2 border-almostBlack rounded-lg`}
         src={project.image}
         alt={project.name}
       />
-      <div className="lg:flex-1">
+      <div className="lg:flex-1 flex flex-col gap-2">
         <h2 className="font-medium text-3xl lowercase">{project.name}</h2>
         <div className="flex flex-wrap gap-3">
           {project.skills.map((skill, index) => (
