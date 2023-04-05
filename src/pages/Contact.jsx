@@ -32,7 +32,7 @@ const Contact = ({ section }) => {
               className="p-2 border-b-2 border-almostGrey bg-almostWhite flex-1"
               placeholder="MESSAGE"
             />
-            <button className="my-2 flex gap-2 font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack self-end">
+            <button className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink self-end">
               Send Message
               <img className="w-6" src={heroArrows} alt="See more" />
             </button>

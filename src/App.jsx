@@ -61,7 +61,11 @@ const App = () => {
         scrollTo={scrollTo}
       />
       <main className="max-w-5xl m-auto">
-        <Hero section={sections[0]} scrollTo={scrollTo} />
+        <Hero
+          section={sections[0]}
+          scrollTarget={sections[3]}
+          scrollTo={scrollTo}
+        />
         <About section={sections[1]} />
         <Work sections={sections.slice(2, 8)} />
         <Contact section={sections[8]} />

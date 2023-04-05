@@ -3,7 +3,7 @@ import heroArrows from '/icons/hero-arrows.svg'
 import heroImageMobile from '/images/portrait_mobile.jpeg'
 import heroImageDesktop from '/images/portrait_desktop.jpeg'
 
-const Hero = ({ scrollTo, section }) => {
+const Hero = ({ scrollTo, scrollTarget, section }) => {
   return (
     <section
       id={section.title}
@@ -21,28 +21,28 @@ const Hero = ({ scrollTo, section }) => {
             <h2 className="font-medium text-2xl">ian luong.</h2>
             <div className="flex gap-4">
               <a
-                className="cursor-pointer hover:animate-pulse"
+                className="cursor-pointer transition-all duration-300 hover:text-mauve"
                 href="https://github.com/IanLuong"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-github" size="2x" />
               </a>
               <a
-                className="cursor-pointer hover:animate-pulse"
+                className="cursor-pointer transition-all duration-300 hover:text-columbiaBlue"
                 href="https://www.linkedin.com/in/ianluong/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" size="2x" />
               </a>
               <a
-                className="cursor-pointer hover:animate-pulse"
+                className="cursor-pointer transition-all duration-300 hover:text-peach"
                 href="https://www.instagram.com/ian__luong/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />
               </a>
               <a
-                className="cursor-pointer hover:animate-pulse"
+                className="cursor-pointer transition-all duration-300 hover:text-amaranthPink"
                 href="/IanLuongCV.pdf"
                 target="_blank"
               >
@@ -60,16 +60,15 @@ const Hero = ({ scrollTo, section }) => {
         </p>
         <div className="flex w-full gap-4">
           <a
-            className="flex gap-2 font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack transition-colors duration-700 transform hover:bg-amaranthPink"
+            className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink"
             href="#projects"
-            onClick={(event) => scrollTo(event)}
+            onClick={(event) => scrollTo(event, scrollTarget.ref)}
           >
             See My Work
             <img className="w-6" src={heroArrows} alt="See more" />
           </a>
-          {/* <div className="flex items-center text-center gap-2 p-2">
+          {/* <div className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink">
             <p className="font-semibold">Contact Me</p>
-            <img className="w-6" src={seeMore} alt="See more" />
           </div> */}
         </div>
       </div>
