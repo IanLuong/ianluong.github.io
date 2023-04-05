@@ -9,7 +9,7 @@ const Contact = ({ section }) => {
     >
       <div className="w-full flex-1 flex flex-col self-end gap-3 px-4 py-2">
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
-          contact me.
+          ✉️ contact me.
         </h1>
         <div className="flex-1 flex flex-col items-center self-center max-w-2xl">
           <p className="font-medium text-xl m-2 text-center">

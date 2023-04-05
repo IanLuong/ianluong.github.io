@@ -21,14 +21,6 @@ const Header = ({ setSidebarVisible }) => {
             <li>
               <a
                 className="cursor-pointer hover:underline decoration-double"
-                href="#home"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:underline decoration-double"
                 href="#about"
               >
                 About
