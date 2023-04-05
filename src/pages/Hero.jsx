@@ -1,9 +1,3 @@
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import heroArrows from '/icons/hero-arrows.svg'
 import heroImageMobile from '/images/portrait_mobile.jpeg'
@@ -31,28 +25,28 @@ const Hero = ({ scrollTo, section }) => {
                 href="https://github.com/IanLuong"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faGithub} size="2x" />
+                <FontAwesomeIcon icon="fa-brands fa-github" size="2x" />
               </a>
               <a
                 className="cursor-pointer hover:animate-pulse"
                 href="https://www.linkedin.com/in/ianluong/"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" size="2x" />
               </a>
               <a
                 className="cursor-pointer hover:animate-pulse"
                 href="https://www.instagram.com/ian__luong/"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />
               </a>
               <a
                 className="cursor-pointer hover:animate-pulse"
                 href="/IanLuongCV.pdf"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faFilePdf} size="2x" />
+                <FontAwesomeIcon icon="fa-solid fa-file-pdf" size="2x" />
               </a>
             </div>
           </div>
@@ -66,7 +60,7 @@ const Hero = ({ scrollTo, section }) => {
         </p>
         <div className="flex w-full gap-4">
           <a
-            className="flex gap-2 font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack"
+            className="flex gap-2 font-semibold px-4 py-2 rounded-xl shadow-md border-2 border-almostBlack transition-colors duration-700 transform hover:bg-amaranthPink"
             href="#projects"
             onClick={(event) => scrollTo(event)}
           >

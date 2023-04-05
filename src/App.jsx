@@ -1,11 +1,22 @@
 import { useRef, useState } from 'react'
 import Header from './components/Header'
-import Home from './pages/Home'
+import Hero from './pages/Hero'
 import About from './pages/About'
 import Work from './pages/Work'
 import Sidebar from './components/Sidebar'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import {
+  faFilePdf,
+  faLaptop,
+  faLink,
+  faDatabase,
+  faKeyboard,
+} from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+library.add(fab, faFilePdf, faLaptop, faLink, faDatabase, faKeyboard)
 
 const sectionTitles = [
   'home',
@@ -50,7 +61,7 @@ const App = () => {
         scrollTo={scrollTo}
       />
       <main className="max-w-5xl m-auto">
-        <Home section={sections[0]} scrollTo={scrollTo} />
+        <Hero section={sections[0]} scrollTo={scrollTo} />
         <About section={sections[1]} />
         <Work sections={sections.slice(2, 8)} />
         <Contact section={sections[8]} />

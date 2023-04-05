@@ -20,7 +20,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
           <ul className="flex gap-4 text-lg font-medium text-almostBlack">
             <li>
               <a
-                className="cursor-pointer hover:underline decoration-double"
+                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#F19CBB]"
                 href="#about"
                 onClick={(event) => scrollTo(event, sections[1].ref)}
               >
@@ -29,7 +29,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer hover:underline decoration-double"
+                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#FFDEAD]"
                 href="#skills"
                 onClick={(event) => scrollTo(event, sections[2].ref)}
               >
@@ -38,7 +38,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer hover:underline decoration-double"
+                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#B9D9EB]"
                 href="#projects"
                 onClick={(event) => scrollTo(event, sections[3].ref)}
               >
@@ -47,7 +47,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer hover:underline decoration-double"
+                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#E0B0FF]"
                 href="#contact"
                 onClick={(event) => scrollTo(event, sections[8].ref)}
               >

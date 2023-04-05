@@ -1,5 +1,3 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLaptop, faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Project({ section, project, isLeft }) {
@@ -31,11 +29,11 @@ export default function Project({ section, project, isLeft }) {
         <div className="flex gap-3 text-lg">
           {project.link && (
             <a
-              className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack bg-amaranthPink"
+              className="px-4 py-1 rounded-lg shadow-md border-2 border-almostBlack"
               href={project.link}
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLink} className="pr-2" />
+              <FontAwesomeIcon icon="link" className="pr-2" />
               Link
             </a>
           )}
@@ -45,7 +43,7 @@ export default function Project({ section, project, isLeft }) {
               href={project.demo}
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLaptop} className="pr-2" />
+              <FontAwesomeIcon icon="laptop" className="pr-2" />
               Demo
             </a>
           )}
@@ -55,7 +53,7 @@ export default function Project({ section, project, isLeft }) {
               href={project.repo}
               target="_blank"
             >
-              <FontAwesomeIcon icon={faGithub} className="pr-2" />
+              <FontAwesomeIcon icon="fa-brands fa-github" className="pr-2" />
               Code
             </a>
           )}
