@@ -9,7 +9,7 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
     <li>
       <span
         onClick={() => setIsExpanded((prev) => !prev)}
-        className="text-xl flex items-center gap-4 cursor-pointer hover:text-almostBlack"
+        className="text-xl flex items-center gap-4 cursor-pointer transition-color duration-300 hover:text-columbiaBlue focus:text-columbiaBlue"
       >
         <p>{title}</p>
         <img className="w-3" src={isExpanded ? iconArrowUp : iconArrowDown} />
@@ -20,7 +20,7 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
             <a
               href={`#projects`}
               onClick={(event) => handleSidebarClick(event, sections[0].ref)}
-              className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+              className="flex items-center gap-3 px-6 cursor-pointer transition-color duration-300 hover:text-almostBlack focus:text-almostBlack"
             >
               <p>All</p>
             </a>
@@ -32,7 +32,7 @@ const SidebarDropdown = ({ title, handleSidebarClick, sections, options }) => {
                 onClick={(event) =>
                   handleSidebarClick(event, sections[index].ref)
                 }
-                className="flex items-center gap-3 px-6 cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="flex items-center gap-3 px-6 cursor-pointer transition-color duration-300 hover:text-almostBlack focus:text-almostBlack"
               >
                 {option.icon && (
                   <img className="w-4" src={option.icon} alt={option.title} />

@@ -42,12 +42,12 @@ const About = ({ section }) => {
             <br /> <br />
             To learn more about the event, check out{' '}
             <a
-              className="underline"
+              className="underline trannsition-color duration-200 hover:text-mauve focus:text-mauve"
               href="https://limelightsports.club/event/asics-london-10k-2023"
+              target="_blank"
             >
-              Limelight Sports Club
+              Limelight Sports Club.
             </a>
-            .
           </p>
         </div>
       </div>

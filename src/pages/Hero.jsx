@@ -21,28 +21,28 @@ const Hero = ({ scrollTo, scrollTarget, section }) => {
             <h2 className="font-medium text-2xl">ian luong.</h2>
             <div className="flex gap-4">
               <a
-                className="cursor-pointer transition-all duration-300 hover:text-mauve"
+                className="cursor-pointer transition-all duration-300 hover:text-mauve focus:text-mauve"
                 href="https://github.com/IanLuong"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-github" size="2x" />
               </a>
               <a
-                className="cursor-pointer transition-all duration-300 hover:text-columbiaBlue"
+                className="cursor-pointer transition-all duration-300 hover:text-columbiaBlue focus:text-columbiaBlue"
                 href="https://www.linkedin.com/in/ianluong/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" size="2x" />
               </a>
               <a
-                className="cursor-pointer transition-all duration-300 hover:text-peach"
+                className="cursor-pointer transition-all duration-300 hover:text-peach focus:text-peach"
                 href="https://www.instagram.com/ian__luong/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon="fa-brands fa-instagram" size="2x" />
               </a>
               <a
-                className="cursor-pointer transition-all duration-300 hover:text-amaranthPink"
+                className="cursor-pointer transition-all duration-300 hover:text-amaranthPink focus:text-amaranthPink"
                 href="/IanLuongCV.pdf"
                 target="_blank"
               >
@@ -60,7 +60,7 @@ const Hero = ({ scrollTo, scrollTarget, section }) => {
         </p>
         <div className="flex w-full gap-4">
           <a
-            className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink"
+            className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink"
             href="#projects"
             onClick={(event) => scrollTo(event, scrollTarget.ref)}
           >

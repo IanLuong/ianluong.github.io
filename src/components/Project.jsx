@@ -29,7 +29,7 @@ export default function Project({ section, project, isLeft }) {
         <div className="flex gap-3 text-lg">
           {project.link && (
             <a
-              className="btn-primary hover:bg-navajoWhite"
+              className="btn-primary hover:bg-navajoWhite focus:bg-navajoWhite"
               href={project.link}
               target="_blank"
             >
@@ -39,7 +39,7 @@ export default function Project({ section, project, isLeft }) {
           )}
           {project.demo && (
             <a
-              className="btn-primary hover:bg-celeste"
+              className="btn-primary hover:bg-celeste focus:bg-celeste"
               href={project.demo}
               target="_blank"
             >
@@ -49,7 +49,7 @@ export default function Project({ section, project, isLeft }) {
           )}
           {project.repo && (
             <a
-              className="btn-primary hover:bg-mauve"
+              className="btn-primary hover:bg-mauve focus:bg-mauve"
               href={project.repo}
               target="_blank"
             >

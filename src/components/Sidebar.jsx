@@ -29,16 +29,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
           <ul className="flex flex-col gap-4 text-almostGrey">
             <li>
               <a
-                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
-                href={`#${sections[0].title}`}
-                onClick={(event) => handleSidebarClick(event, sections[0].ref)}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="text-xl cursor-pointer transition-all duration-300 hover:text-amaranthPink focus:text-amaranthPink"
                 href={`#${sections[1].title}`}
                 onClick={(event) => handleSidebarClick(event, sections[1].ref)}
               >
@@ -47,7 +38,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="text-xl cursor-pointer transition-all duration-300 hover:text-navajoWhite focus:text-navajoWhite"
                 href={`#${sections[2].title}`}
                 onClick={(event) => handleSidebarClick(event, sections[2].ref)}
               >
@@ -62,7 +53,7 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
             />
             <li>
               <a
-                className="text-xl cursor-pointer hover:text-almostBlack focus:text-almostBlack"
+                className="text-xl cursor-pointer transition-all duration-300 hover:text-mauve focus:text-mauve"
                 href={`#${sections[8].title}`}
                 onClick={(event) => handleSidebarClick(event, sections[8].ref)}
               >
@@ -73,7 +64,8 @@ const Sidebar = ({ sidebarVisible, setSidebarVisible, sections, scrollTo }) => {
         </nav>
         <a
           href="/IanLuongCV.pdf"
-          className="text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer w-full hover:text-almostBlack hover:border-almostBlack focus:text-almostBlack focus:border-almostBlack"
+          className="text-center border-2 border-almostGrey rounded-xl py-2 my-2 cursor-pointer transition-all duration-300 w-full hover:bg-peach hover:border-almostBlack focus:bg-peach focus:border-almostBlack"
+          target="_blank"
         >
           Resume / CV
         </a>

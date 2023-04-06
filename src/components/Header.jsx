@@ -20,7 +20,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
           <ul className="flex gap-4 text-lg font-medium text-almostBlack">
             <li>
               <a
-                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#F19CBB]"
+                className="cursor-pointer transition-all duration-300 hover:text-3xl hover:text-amaranthPink focus:text-3xl focus:text-amaranthPink"
                 href="#about"
                 onClick={(event) => scrollTo(event, sections[1].ref)}
               >
@@ -29,7 +29,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#FFDEAD]"
+                className="cursor-pointer transition-all duration-300 hover:text-3xl hover:text-navajoWhite focus:text-3xl focus:text-navajoWhite"
                 href="#skills"
                 onClick={(event) => scrollTo(event, sections[2].ref)}
               >
@@ -38,7 +38,7 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#B9D9EB]"
+                className="cursor-pointer transition-all duration-300 hover:text-3xl hover:text-columbiaBlue focus:text-3xl focus:text-columbiaBlue"
                 href="#projects"
                 onClick={(event) => scrollTo(event, sections[3].ref)}
               >
@@ -47,11 +47,20 @@ const Header = ({ setSidebarVisible, sections, scrollTo }) => {
             </li>
             <li>
               <a
-                className="cursor-pointer transition-all hover:text-3xl duration-300 hover:text-[#E0B0FF]"
+                className="cursor-pointer transition-all duration-300 hover:text-3xl hover:text-mauve focus:text-3xl focus:text-mauve"
                 href="#contact"
                 onClick={(event) => scrollTo(event, sections[8].ref)}
               >
                 Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="/IanLuongCV.pdf"
+                target="_blank"
+                className="text-center border-2 border-almostBlack rounded-xl shadow-md px-4 py-2 transition-all duration-300 cursor-pointer hover:bg-peach hover:text-3xl focus:bg-peach focus:text-3xl"
+              >
+                CV
               </a>
             </li>
           </ul>
