@@ -1,13 +1,7 @@
-# Portfolio Site
+# Acknowledgements
 
-My portfolio site built using TailwindCSS and React.\
-Created as part of [The Odin Project's Personal Portfolio Project](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio).
+### Icons
 
-Webpage can be found at https://ianluong.github.io/.
+https://iconduck.com/sets/responsive-icon-set
 
-## Acknowledgements
-
- - Favicon generated with [favicon.io](https://favicon.io/)
- - Icons provided by [FontAwesome](https://fontawesome.com/)
- - Images provided by [Pexels](https://www.pexels.com/)
-   - Cat Photo by Enes Bayraktar: https://www.pexels.com/photo/cat-sleeping-on-tree-stump-near-water-11306305/
+https://fontawesome.com/
