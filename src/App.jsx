@@ -16,6 +16,7 @@ import {
   faKeyboard,
 } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { Toaster } from 'react-hot-toast'
 library.add(fab, faFilePdf, faLaptop, faLink, faDatabase, faKeyboard)
 
 const sectionTitles = [
@@ -71,10 +72,9 @@ const App = () => {
         <Contact section={sections[8]} />
       </main>
       <Footer sections={sections} scrollTo={scrollTo} />
+      <Toaster position="bottom-center" />
     </div>
   )
 }
 
 export default App
-
-// bg-gradient-to-b from-[#EF566A] to-[#627AF7]

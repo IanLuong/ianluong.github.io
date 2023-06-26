@@ -1,8 +1,10 @@
 import { useRef, useState } from 'react'
 import heroArrows from '/icons/hero-arrows.svg'
 import emailjs from '@emailjs/browser'
+import { toast } from 'react-hot-toast'
 
 const Contact = ({ section }) => {
+  //TODO: Add form validation
   const form = useRef()
 
   const [contactForm, setContactForm] = useState({
@@ -28,7 +30,7 @@ const Contact = ({ section }) => {
       )
       .then(
         (result) => {
-          console.log(result.text)
+          toast.success('Message sent! Thanks for your message!')
           setContactForm({
             name: '',
             email: '',
@@ -36,7 +38,7 @@ const Contact = ({ section }) => {
           })
         },
         (error) => {
-          console.log(error.text)
+          toast.error('Error sending your message. Please try again later')
         }
       )
   }
