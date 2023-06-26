@@ -1,6 +1,46 @@
+import { useRef, useState } from 'react'
 import heroArrows from '/icons/hero-arrows.svg'
+import emailjs from '@emailjs/browser'
 
 const Contact = ({ section }) => {
+  const form = useRef()
+
+  const [contactForm, setContactForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setContactForm((prevForm) => ({ ...prevForm, [name]: value }))
+  }
+
+  const sendEmail = (event) => {
+    event.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_g6fg5ij',
+        'contact_form',
+        form.current,
+        'tKd3aCBCFcnLeJTnn'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          setContactForm({
+            name: '',
+            email: '',
+            message: '',
+          })
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
+
   return (
     <section
       id={section.title}
@@ -17,22 +57,38 @@ const Contact = ({ section }) => {
             fill in the form, and I'll get back to you as soon as possible.
           </p>
 
-          <form className="flex-1 flex flex-col mx-2 my-8 gap-4 font-normal w-full">
+          <form
+            className="flex-1 flex flex-col mx-2 my-8 gap-4 font-normal w-full"
+            onSubmit={sendEmail}
+            ref={form}
+          >
             <input
               className="p-2 border-b-2 border-almostGrey bg-almostWhite"
               type="text"
               placeholder="NAME"
+              name="name"
+              value={contactForm.name}
+              onChange={handleChange}
             />
             <input
               className="p-2 border-b-2 border-almostGrey bg-almostWhite"
               type="email"
               placeholder="EMAIL"
+              name="email"
+              value={contactForm.email}
+              onChange={handleChange}
             />
             <textarea
               className="p-2 border-b-2 border-almostGrey bg-almostWhite flex-1"
               placeholder="MESSAGE"
+              name="message"
+              value={contactForm.message}
+              onChange={handleChange}
             />
-            <button className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink self-end">
+            <button
+              type="submit"
+              className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink self-end"
+            >
               Send Message
               <img className="w-6" src={heroArrows} alt="See more" />
             </button>
