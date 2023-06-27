@@ -71,6 +71,7 @@ const Contact = ({ section }) => {
               name="name"
               value={contactForm.name}
               onChange={handleChange}
+              required
             />
             <input
               className="p-2 border-b-2 border-almostGrey bg-almostWhite"
@@ -79,6 +80,7 @@ const Contact = ({ section }) => {
               name="email"
               value={contactForm.email}
               onChange={handleChange}
+              required
             />
             <textarea
               className="p-2 border-b-2 border-almostGrey bg-almostWhite flex-1"
@@ -86,6 +88,7 @@ const Contact = ({ section }) => {
               name="message"
               value={contactForm.message}
               onChange={handleChange}
+              required
             />
             <button
               type="submit"

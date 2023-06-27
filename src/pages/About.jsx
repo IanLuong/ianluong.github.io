@@ -42,10 +42,18 @@ const About = ({ section }) => {
             </p>
             <br />
             <p className="font-bold">
-              In July, I will be running the ASICS London 10K and raising money
-              for charity.
+              On July 9th 2023, I will be running the ASICS London 10K and
+              raising money for Parkinson's UK, in memory of my grandfather.
               <br /> <br />
-              To learn more about the event, check out{' '}
+              If you would like to donate, please visit{' '}
+              <a
+                className="underline trannsition-color duration-200 hover:text-mauve focus:text-mauve"
+                href="https://www.justgiving.com/fundraising/ianluong"
+                target="_blank"
+              >
+                JustGiving
+              </a>{' '}
+              and to learn more about the event, check out{' '}
               <a
                 className="underline trannsition-color duration-200 hover:text-mauve focus:text-mauve"
                 href="https://limelightsports.club/event/asics-london-10k-2023"
