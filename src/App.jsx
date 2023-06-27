@@ -17,6 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { Toaster } from 'react-hot-toast'
+import AlertBar from './components/AlertBar'
 library.add(fab, faFilePdf, faLaptop, faLink, faDatabase, faKeyboard)
 
 const sectionTitles = [
@@ -56,6 +57,7 @@ const App = () => {
         scrollTo={scrollTo}
       />
 
+      <AlertBar />
       <Header
         setSidebarVisible={setSidebarVisible}
         sections={sections}
