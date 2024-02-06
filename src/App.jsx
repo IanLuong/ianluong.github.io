@@ -57,7 +57,7 @@ const App = () => {
         scrollTo={scrollTo}
       />
 
-      <AlertBar />
+      {/* <AlertBar /> */}
       <Header
         setSidebarVisible={setSidebarVisible}
         sections={sections}

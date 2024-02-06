@@ -23,7 +23,7 @@ const About = ({ section }) => {
             <p>
               My primary focus is accessibility, writing clean JavaScript and
               modern CSS. I mostly use React, Node and MongoDB but I can adapt
-              to whatever is required. Learning new techonologies is part of the
+              to whatever is required. Learning new technologies is part of the
               game. I currently work with JavaScript, React, Node.js and
               Tailwind CSS to build quality web apps.
             </p>
@@ -41,7 +41,7 @@ const About = ({ section }) => {
               it out.
             </p>
             <br />
-            <p className="font-bold">
+            {/* <p className="font-bold">
               On July 9th 2023, I will be running the ASICS London 10K and
               raising money for Parkinson's UK, in memory of my grandfather.
               <br /> <br />
@@ -61,7 +61,7 @@ const About = ({ section }) => {
               >
                 Limelight Sports Club.
               </a>
-            </p>
+            </p> */}
           </Fade>
         </div>
       </div>
