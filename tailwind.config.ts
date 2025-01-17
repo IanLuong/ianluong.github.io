@@ -1,9 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
+
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         almostWhite: '#F8F8F8',
         almostGrey: '#8D8D8D',
         almostBlack: '#212121',
@@ -16,10 +23,7 @@ export default {
         columbiaBlue: '#B9D9EB',
         mauve: '#E0B0FF',
       },
-      fontFamily: {
-        rubik: ['Rubik', 'sans-serif'],
-      },
     },
   },
   plugins: [],
-}
+} satisfies Config;
