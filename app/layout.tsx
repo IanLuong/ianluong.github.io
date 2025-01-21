@@ -3,6 +3,8 @@ import { Rubik } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '@/components/Footer';
+import { Toaster } from 'react-hot-toast';
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -21,12 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} antialiased`}>
+      <body className={`${rubik.className} antialiased bg-almostWhite`}>
         <header className="max-w-5xl m-auto absolute sm:relative sm:block w-screen p-4 z-10">
           <div className="flex justify-between items-center max-w-5xl m-auto">
             <Link
               href="/"
-              className="font-semibold text-3xl px-4 py-2 rounded-xl border-2 border-almostBlack bg-almostWhite"
+              className="font-semibold text-3xl px-4 py-2 rounded-xl border-2 border-almostBlack bg-white"
             >
               ian.
             </Link>
@@ -45,7 +47,7 @@ export default function RootLayout({
                 <li>
                   <Link
                     className="cursor-pointer transition-all duration-300 hover:text-amaranthPink focus:text-amaranthPink"
-                    href="/about"
+                    href="#about"
                   >
                     About
                   </Link>
@@ -53,7 +55,7 @@ export default function RootLayout({
                 <li>
                   <Link
                     className="cursor-pointer transition-all duration-300 hover:text-navajoWhite focus:text-navajoWhite"
-                    href="/skills"
+                    href="#skills"
                   >
                     Skills
                   </Link>
@@ -61,7 +63,7 @@ export default function RootLayout({
                 <li>
                   <Link
                     className="cursor-pointer transition-all duration-300 hover:text-columbiaBlue focus:text-columbiaBlue"
-                    href="/projects"
+                    href="#projects"
                   >
                     Projects
                   </Link>
@@ -69,7 +71,7 @@ export default function RootLayout({
                 <li>
                   <Link
                     className="cursor-pointer transition-all duration-300 hover:text-mauve focus:text-mauve"
-                    href="/contact"
+                    href="#contact"
                   >
                     Contact
                   </Link>
@@ -78,7 +80,7 @@ export default function RootLayout({
                   <Link
                     href="/IanLuongCV.pdf"
                     target="_blank"
-                    className="text-center border-2 border-almostBlack rounded-xl px-4 py-2 transition-all duration-300 cursor-pointer hover:bg-peach focus:bg-peach"
+                    className="text-center border-2 border-almostBlack rounded-xl px-4 py-2 transition-all duration-300 cursor-pointer bg-white hover:bg-peach focus:bg-peach"
                   >
                     CV
                   </Link>
@@ -89,6 +91,8 @@ export default function RootLayout({
         </header>
 
         {children}
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );
