@@ -4,6 +4,7 @@ import './globals.css';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { Toaster } from 'react-hot-toast';
+import ogImage from './opengraph-image.png';
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -12,7 +13,16 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: 'Ian Luong | Fullstack Web Developer',
   description:
-    'Full Stack Web Developer from London. Look around at my projects and get in touch.',
+    'Full Stack Web Developer from London.',
+  openGraph: {
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
