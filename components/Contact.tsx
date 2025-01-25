@@ -48,7 +48,7 @@ const Contact = ({}) => {
   };
 
   return (
-    <section className="flex flex-col my-12">
+    <section className="flex flex-col my-12 max-w-5xl mx-auto">
       <div className="w-full flex-1 flex flex-col self-end gap-3 px-4 py-2">
         <h1 className="font-semibold text-4xl px-2 border-b-2 border-almostBlack">
           ✉️ contact me.
@@ -95,7 +95,13 @@ const Contact = ({}) => {
               className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink self-end"
             >
               Send Message
-              <Image width={24} height={24} className="w-6" src="/hero-arrows.svg" alt="Send" />
+              <Image
+                width={24}
+                height={24}
+                className="w-6"
+                src="/hero-arrows.svg"
+                alt="Send"
+              />
             </button>
           </form>
         </div>

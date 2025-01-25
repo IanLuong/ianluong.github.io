@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import { Toaster } from 'react-hot-toast';
 
@@ -33,14 +32,14 @@ export default function RootLayout({
               ian.
             </Link>
 
-            <Image
+            {/* <Image
               className="w-6 sm:hidden"
               src="/nav-bars.svg"
               alt="Open Sidebar"
               width={280}
               height={38}
               title="Open Sidebar"
-            />
+            /> */}
 
             <nav className="hidden sm:block">
               <ul className="flex gap-4 text-lg font-medium text-almostBlack">

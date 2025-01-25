@@ -15,8 +15,8 @@ export default function Home() {
           className="w-screen h-auto sm:w-96 md:max-w-[528px] sm:order-2 sm:self-center sm:border-4 sm:border-almostBlack sm:rounded-xl"
           src="/images/portrait_desktop.jpeg"
           alt="Ian Luong"
-          width={200}
-          height={100}
+          width={756}
+          height={1008}
         />
         <div className="sm:max-w-md sm:flex-auto sm:self-center sm:border-0 w-full flex-1 flex flex-col border-t-2 border-almostBlack justify-center gap-3 px-4 py-4">
           <div className="flex flex-col items-start">
