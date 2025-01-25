@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Contact = ({}) => {
   //TODO: Add form validation
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const [contactForm, setContactForm] = useState({
     name: '',
@@ -25,26 +25,30 @@ const Contact = ({}) => {
   const sendEmail = (event: React.SyntheticEvent) => {
     event.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_g6fg5ij',
-        'contact_form',
-        form.current,
-        'tKd3aCBCFcnLeJTnn'
-      )
-      .then(
-        () => {
-          toast.success('Message sent! Thanks for your message!');
-          setContactForm({
-            name: '',
-            email: '',
-            message: '',
-          });
-        },
-        () => {
-          toast.error('Error sending your message. Please try again later');
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_g6fg5ij',
+          'contact_form',
+          form.current,
+          'tKd3aCBCFcnLeJTnn'
+        )
+        .then(
+          () => {
+            toast.success('Message sent! Thanks for your message!');
+            setContactForm({
+              name: '',
+              email: '',
+              message: '',
+            });
+          },
+          () => {
+            toast.error('Error sending your message. Please try again later');
+          }
+        );
+    } else {
+      toast.error('Form reference is null. Please try again.');
+    }
   };
 
   return (
