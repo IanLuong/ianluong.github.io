@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { Toaster } from 'react-hot-toast';
 import ogImage from './opengraph-image.png';
+import { Analytics } from '@vercel/analytics/react';
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -12,8 +13,7 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   title: 'Ian Luong | Fullstack Web Developer',
-  description:
-    'Full Stack Web Developer from London.',
+  description: 'Full Stack Web Developer from London.',
   openGraph: {
     images: [
       {
@@ -102,6 +102,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
