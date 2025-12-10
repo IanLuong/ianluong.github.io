@@ -5,24 +5,24 @@
     "description": "A NextJS app created to track game sessions and player deaths. Uses realtime player updates and social features like friend requests and friend groups.",
     "image": "/images/squadgoals.png",
     "skills": ["typescript", "nextjs", "realtime updates", "postgres"],
-    "demo": "https://squadgoals.live"
+    "link": "https://squadgoals.live"
   },
   {
     "id": 1,
-    "name": "WhatDo.io",
-    "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication with JWTs to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",
-    "image": "/images/whatdoio.png",
-    "skills": ["typescript", "react", "node.js & express", "mongoDB"],
-    "demo": "https://what-do-io.fly.dev"
-  },
-  {
-    "id": 2,
     "name": "KamaTimer",
     "description": "A Pomodoro Timer Web App created to keep focused, featuring customizable focus/break timing and a dark mode.\n\n(Named after 'kamatis' which means 'tomato' in Tagalog)",
     "image": "/images/kamatimer.png",
     "skills": ["html", "css", "typescript", "react"],
-    "demo": "https://www.kamatimer.app/",
+    "link": "https://www.kamatimer.app/",
     "repo": "https://github.com/IanLuong/kamatimer"
+  },
+  {
+    "id": 2,
+    "name": "WhatDo.io",
+    "description": "A Full Stack CRUD app for tracking shared expenses, so people can get paid back. Features user authentication with JWTs to track your expenses on the go.\n\nBuilt the backend REST API using MongoDB, Express and Node.js, with the front end using React and Tailwind.",
+    "image": "/images/whatdoio.png",
+    "skills": ["typescript", "react", "node.js & express", "mongoDB"],
+    "link": "https://what-do-io.fly.dev"
   },
   {
     "id": 3,

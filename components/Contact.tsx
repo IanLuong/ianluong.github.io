@@ -9,6 +9,7 @@ const Contact = ({}) => {
   //TODO: Add form validation
   const form = useRef<HTMLFormElement>(null);
 
+  const [isPending, setIsPending] = useState(false);
   const [contactForm, setContactForm] = useState({
     name: '',
     email: '',
@@ -22,30 +23,29 @@ const Contact = ({}) => {
     setContactForm((prevForm) => ({ ...prevForm, [name]: value }));
   };
 
-  const sendEmail = (event: React.SyntheticEvent) => {
+  const sendEmail = async (event: React.SyntheticEvent) => {
     event.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
+      try {
+        setIsPending(true);
+        await emailjs.sendForm(
           'service_g6fg5ij',
           'contact_form',
           form.current,
           'tKd3aCBCFcnLeJTnn'
-        )
-        .then(
-          () => {
-            toast.success('Message sent! Thanks for your message!');
-            setContactForm({
-              name: '',
-              email: '',
-              message: '',
-            });
-          },
-          () => {
-            toast.error('Error sending your message. Please try again later');
-          }
         );
+        toast.success('Message sent! Thanks for your message!');
+        setContactForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } catch {
+        toast.error('Error sending your message. Please try again later');
+      } finally {
+        setIsPending(false);
+      }
     } else {
       toast.error('Form reference is null. Please try again.');
     }
@@ -96,16 +96,32 @@ const Contact = ({}) => {
             />
             <button
               type="submit"
-              className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink self-end"
+              disabled={isPending}
+              className="btn-primary flex gap-2 font-semibold px-4 py-2 rounded-xl hover:bg-amaranthPink focus:bg-amaranthPink disabled:cursor-not-allowed disabled:hover:bg-inherit self-end"
             >
-              Send Message
-              <Image
-                width={24}
-                height={24}
-                className="w-6"
-                src="/hero-arrows.svg"
-                alt="Send"
-              />
+              {isPending ? (
+                <>
+                  <Image
+                    width={24}
+                    height={24}
+                    className="w-6 animate-spin"
+                    src="/spinner.svg"
+                    alt="Send"
+                  />
+                  Sending...
+                </>
+              ) : (
+                <>
+                  Send Message
+                  <Image
+                    width={24}
+                    height={24}
+                    className="w-6"
+                    src="/hero-arrows.svg"
+                    alt="Send"
+                  />
+                </>
+              )}
             </button>
           </form>
         </div>
