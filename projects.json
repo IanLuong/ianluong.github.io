@@ -21,7 +21,7 @@
     "description": "A Pomodoro Timer Web App created to keep focused, featuring customizable focus/break timing and a dark mode.\n\n(Named after 'kamatis' which means 'tomato' in Tagalog)",
     "image": "/images/kamatimer.png",
     "skills": ["html", "css", "typescript", "react"],
-    "demo": "https://ianluong.github.io/kamatimer/",
+    "demo": "https://www.kamatimer.app/",
     "repo": "https://github.com/IanLuong/kamatimer"
   },
   {
