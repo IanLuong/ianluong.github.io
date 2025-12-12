@@ -15,7 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@phosphor-icons/react": "^2.1.7",
     "@vercel/analytics": "^1.6.1",
-    "next": "15.2.6",
+    "next": "15.2.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.1",
